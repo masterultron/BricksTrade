@@ -1,0 +1,48 @@
+Build a modern, state-of-the-art "show and tell" brochure website for a real estate company. The design must be extremely premium, in-vogue, and feature "wow-factor" 3D-like animations, smooth page transitions, and video-like interactive functionalities.
+
+Tech Stack: Next.js (App Router), React, Tailwind CSS, TypeScript, and Framer Motion (for high-end animations).
+
+Global Design & Data Rules:
+
+Use a sleek, minimalist luxury business UI integrating a core color palette of dark blue (navy blue), orange gold, and green to reflect their parent companies' branding.
+
+Implement smooth scroll and reveal animations as the user scrolls down the pages.
+
+Use placeholder data (Lorem Ipsum for text, Unsplash/Pexels architectural placeholders for images, and dummy phone numbers/social links) while I await client assets.
+
+Global Components:
+
+Navbar: Sticky or floating modern navbar. Logo on the far left (clickable, routes to /). Menu links in the center or right (Home, About/Portfolio, Contact).
+
+Footer: Clean and professional. Logo on the left (clickable to /). Quick menu shortcuts in the middle. Copyright text at the bottom right reading: "© [Current Year] Real Estate Co. Built by [Your Name]".
+
+Page Layouts:
+
+1. Home Page (/)
+
+Hero Section: Full-screen slideshow featuring high-quality placeholder images of live projects and 3D architectural renders. Include smooth crossfade transitions and a bold, elegant overlay text.
+
+Motto Section: A short, impactful caption or motto that animates into view (e.g., text reveal or 3D flip effect).
+
+Short About: A brief, elegant summary of the company with a "Read More" button linking to the About page.
+
+2. About / Portfolio Page (/about)
+
+Hero Section: Use a stunning Parallax scrolling hero section with a slow-zooming high-resolution 3D building render or looping architectural video background. Overlay a short, punchy "About" intro.
+
+Detailed Content: Underneath the hero, use a beautiful staggered layout to present: "About Us", "Our Mission", and "Our Journey". Animate these sections as the user scrolls, perhaps using alternating text and image blocks.
+
+3. Contact Page (/contact)
+
+Hero/Header: A sleek, minimal header titled "Contact Us".
+
+Contact Details: Display the Phone, Email, and WhatsApp contact information using modern iconography and hover effects.
+
+Social Links: A beautifully arranged row of social media logos (Instagram, LinkedIn, Facebook, X). When hovered, they should scale or glow, and when clicked, route to their respective links.
+
+Lead Generation Form: A sleek form (Name, Phone Number, Message) with modern input fields and floating labels. Configure the form to use a Next.js API route or a service like EmailJS/Formspree so that submissions go straight to an email address.
+
+Interactive Map: Below the form, include a highly stylized Google Maps iframe (or placeholder block) themed to complement the brand's color palette. The map must show the office location and be fully clickable, redirecting the user directly to Google Maps to get driving directions to the company.
+
+Final Requirement (Documentation):
+Please scaffold the project, set up the routing, create the components, and implement the Framer Motion animations. Once completed, create a detailed README.md file. This file must document everything built in this project, clearly list the tech stack used, map out the exact folder structure and file locations, and provide step-by-step instructions on how to download the zipped project from Replit, open it in VSCode, install dependencies, and start the development server locally.

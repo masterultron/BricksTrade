@@ -1,0 +1,28 @@
+kind = "web"
+previewPath = "/"
+title = "Real Estate Showcase"
+description = "A premium real-estate brochure website with cinematic project storytelling, animated portfolio pages, and a polished lead-generation contact experience."
+version = "1.0.0"
+id = "artifacts/real-estate-showcase"
+router = "path"
+
+[[services]]
+name = "web"
+paths = [ "/" ]
+localPort = 22672
+
+[services.development]
+run = "pnpm --filter @workspace/real-estate-showcase run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/real-estate-showcase", "run", "build" ]
+serve = "static"
+publicDir = "artifacts/real-estate-showcase/dist/public"
+
+[[services.production.rewrites]]
+from = "/*"
+to = "/index.html"
+
+[services.env]
+PORT = "22672"
+BASE_PATH = "/"
