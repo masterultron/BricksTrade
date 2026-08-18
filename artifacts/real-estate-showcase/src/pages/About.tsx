@@ -4,12 +4,12 @@ import { Link } from 'wouter';
 import { Reveal } from '@/components/Shell';
 
 const portfolio = [
-  { title: 'Morrow House', type: 'Private residence', place: 'Hudson Valley, NY', image: 'https://images.pexels.com/photos/2079249/pexels-photo-2079249.jpeg?auto=compress&cs=tinysrgb&w=1600', size: 'large' },
-  { title: 'Aster Court', type: 'Urban residences', place: 'Brooklyn, NY', image: 'https://images.pexels.com/photos/323705/pexels-photo-323705.jpeg?auto=compress&cs=tinysrgb&w=1400', size: 'small' },
-  { title: 'The Stillwater', type: 'Hospitality', place: 'West Cornwall, CT', image: 'https://images.pexels.com/photos/1396122/pexels-photo-1396122.jpeg?auto=compress&cs=tinysrgb&w=1400', size: 'small' },
-  { title: 'Silo No. 4', type: 'Adaptive reuse', place: 'Kingston, NY', image: 'https://images.pexels.com/photos/323780/pexels-photo-323780.jpeg?auto=compress&cs=tinysrgb&w=1600', size: 'large' },
-  { title: 'Northline', type: 'Mixed-use', place: 'Providence, RI', image: 'https://images.pexels.com/photos/1022936/pexels-photo-1022936.jpeg?auto=compress&cs=tinysrgb&w=1400', size: 'small' },
-  { title: 'Casa Lento', type: 'Private residence', place: 'Marfa, TX', image: 'https://images.pexels.com/photos/1115804/pexels-photo-1115804.jpeg?auto=compress&cs=tinysrgb&w=1400', size: 'small' },
+  { title: 'Morrow House', type: 'Private residence', place: 'Gwarinpa, Abuja', image: 'https://images.pexels.com/photos/2079249/pexels-photo-2079249.jpeg?auto=compress&cs=tinysrgb&w=1600', size: 'large' },
+  { title: 'Aster Court', type: 'Urban residences', place: 'Wuse 2, Abuja', image: 'https://images.pexels.com/photos/323705/pexels-photo-323705.jpeg?auto=compress&cs=tinysrgb&w=1400', size: 'small' },
+  { title: 'The Stillwater', type: 'Hospitality', place: 'Jabi, Abuja', image: 'https://images.pexels.com/photos/1396122/pexels-photo-1396122.jpeg?auto=compress&cs=tinysrgb&w=1400', size: 'small' },
+  { title: 'Silo No. 4', type: 'Adaptive reuse', place: 'Maitama, Abuja', image: 'https://images.pexels.com/photos/323780/pexels-photo-323780.jpeg?auto=compress&cs=tinysrgb&w=1600', size: 'large' },
+  { title: 'Northline', type: 'Mixed-use', place: 'Victoria Island, Lagos', image: 'https://images.pexels.com/photos/1022936/pexels-photo-1022936.jpeg?auto=compress&cs=tinysrgb&w=1400', size: 'small' },
+  { title: 'Casa Lento', type: 'Private residence', place: 'Asokoro, Abuja', image: 'https://images.pexels.com/photos/1115804/pexels-photo-1115804.jpeg?auto=compress&cs=tinysrgb&w=1400', size: 'small' },
 ];
 
 export default function About() {
@@ -29,7 +29,7 @@ export default function About() {
       <section id="story" className="px-5 py-24 md:px-10 md:py-40">
         <div className="mx-auto grid max-w-[1400px] gap-16 md:grid-cols-[.65fr_1.35fr] md:gap-28">
           <Reveal><p className="mono text-[hsl(var(--secondary))]">01 / Why we exist</p></Reveal>
-          <Reveal delay={.1}><h2 className="display max-w-4xl text-5xl leading-[.95] md:text-8xl">We make places that <em className="text-[hsl(var(--secondary))]">hold their value</em> in more ways than one.</h2><p className="mt-10 max-w-2xl text-base leading-7 text-[hsl(var(--muted-foreground))] md:text-lg">Aperture was founded in New York by a small group of architects, developers, and listeners. We were tired of the distance between a beautiful drawing and a meaningful address. So we built a studio that keeps the two in conversation.</p></Reveal>
+          <Reveal delay={.1}><h2 className="display max-w-4xl text-5xl leading-[.95] md:text-8xl">We make places that <em className="text-[hsl(var(--secondary))]">hold their value</em> in more ways than one.</h2><p className="mt-10 max-w-2xl text-base leading-7 text-[hsl(var(--muted-foreground))] md:text-lg">Aperture was founded in Abuja by a small group of architects, developers, and listeners. We were tired of the distance between a beautiful drawing and a meaningful address. So we built a studio that keeps the two in conversation.</p></Reveal>
         </div>
       </section>
 

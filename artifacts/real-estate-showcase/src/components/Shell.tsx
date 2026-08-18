@@ -58,7 +58,7 @@ export function Shell({ children }: { children: React.ReactNode }) {
               ))}
             </nav>
             <div className="flex justify-between border-t border-[hsl(var(--primary-foreground)/.2)] pt-5">
-              <span className="mono opacity-60">New York · London · Everywhere</span>
+              <span className="mono opacity-60">Abuja · Lagos · Everywhere</span>
               <span className="mono text-[hsl(var(--accent))]">Est. 2011</span>
             </div>
           </motion.div>
@@ -87,7 +87,7 @@ function Footer() {
           </div>
           <div>
             <p className="mono mb-5 opacity-50">Find us</p>
-            <p className="max-w-[170px] text-sm leading-6 opacity-80">18 Crosby Street<br />New York, NY 10013</p>
+            <p className="max-w-[190px] text-sm leading-6 opacity-80">Plot 18, 3rd Avenue<br />Gwarinpa, Abuja, Nigeria</p>
             <a href="mailto:hello@aperture.studio" className="line-link mt-4 inline-block text-sm opacity-80 hover:opacity-100" data-testid="link-footer-email">hello@aperture.studio</a>
           </div>
         </div>
