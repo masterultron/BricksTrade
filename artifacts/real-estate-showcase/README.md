@@ -1,4 +1,4 @@
-# Aperture Property Studio
+# BricksTrade Property Studio
 
 A premium real-estate brochure website designed to present architectural work as an editorial, cinematic experience. The site is intentionally asset-ready: the current photography, copy, contact details, and social destinations are placeholders that can be replaced when the client materials arrive.
 
@@ -59,7 +59,7 @@ artifacts/real-estate-showcase/
 
 ## Replacing placeholder content
 
-The current build uses fictional Aperture Property Studio branding and placeholder architectural photography for presentation. Before client delivery:
+The current build uses fictional BricksTrade Property Developer branding and placeholder architectural photography for presentation. Before client delivery:
 
 1. Replace the studio name and logo treatment in `src/components/Shell.tsx`.
 2. Replace project names, locations, years, descriptions, and image URLs in `src/pages/Home.tsx` and `src/pages/About.tsx`.

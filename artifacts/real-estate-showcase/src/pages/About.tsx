@@ -20,16 +20,16 @@ export default function About() {
       <section className="relative min-h-[88dvh] overflow-hidden bg-[hsl(var(--primary))] px-5 pb-16 pt-40 text-[hsl(var(--primary-foreground))] md:px-10 md:pb-24 md:pt-52">
         <div className="absolute right-0 top-0 h-full w-[43%] overflow-hidden opacity-50"><motion.img style={{ y: introY }} src="https://images.pexels.com/photos/1732414/pexels-photo-1732414.jpeg?auto=compress&cs=tinysrgb&w=1600" alt="Brutalist concrete facade" className="h-[115%] w-full object-cover grayscale" /><div className="absolute inset-0 bg-[linear-gradient(90deg,hsl(211_44%_13%),transparent)]" /></div>
         <div className="relative mx-auto max-w-[1400px]">
-          <Reveal><p className="mono mb-10 text-[hsl(var(--accent))]">Aperture / The studio</p></Reveal>
+          <Reveal><p className="mono mb-10 text-[hsl(var(--accent))]">BricksTrade / The Developer</p></Reveal>
           <motion.h1 initial={{ opacity: 0, y: 35 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 1 }} className="display max-w-4xl text-[clamp(5rem,13vw,12rem)] leading-[.78] tracking-[-.04em]">The long<br /><em className="text-[hsl(var(--accent))]">view.</em></motion.h1>
-          <div className="mt-16 flex items-end justify-between md:mt-24"><p className="max-w-sm text-sm leading-6 opacity-65">An independent property studio working at the intersection of architecture, landscape, and everyday life.</p><a href="#story" className="hidden items-center gap-3 text-[10px] uppercase tracking-[.15em] opacity-70 md:flex" data-testid="link-scroll-story">Our story <MoveDown size={15} /></a></div>
+          <div className="mt-16 flex items-end justify-between md:mt-24"><p className="max-w-sm text-sm leading-6 opacity-65">An independent property developer working at the intersection of architecture, landscape, and everyday life.</p><a href="#story" className="hidden items-center gap-3 text-[10px] uppercase tracking-[.15em] opacity-70 md:flex" data-testid="link-scroll-story">Our story <MoveDown size={15} /></a></div>
         </div>
       </section>
 
       <section id="story" className="px-5 py-24 md:px-10 md:py-40">
         <div className="mx-auto grid max-w-[1400px] gap-16 md:grid-cols-[.65fr_1.35fr] md:gap-28">
           <Reveal><p className="mono text-[hsl(var(--secondary))]">01 / Why we exist</p></Reveal>
-          <Reveal delay={.1}><h2 className="display max-w-4xl text-5xl leading-[.95] md:text-8xl">We make places that <em className="text-[hsl(var(--secondary))]">hold their value</em> in more ways than one.</h2><p className="mt-10 max-w-2xl text-base leading-7 text-[hsl(var(--muted-foreground))] md:text-lg">Aperture was founded in Abuja by a small group of architects, developers, and listeners. We were tired of the distance between a beautiful drawing and a meaningful address. So we built a studio that keeps the two in conversation.</p></Reveal>
+          <Reveal delay={.1}><h2 className="display max-w-4xl text-5xl leading-[.95] md:text-8xl">We make places that <em className="text-[hsl(var(--secondary))]">hold their value</em> in more ways than one.</h2><p className="mt-10 max-w-2xl text-base leading-7 text-[hsl(var(--muted-foreground))] md:text-lg">BricksTrade was founded in Abuja by a small group of architects, developers, and listeners. We were tired of the distance between a beautiful drawing and a meaningful address. So we built properties that keeps the two in conversation.</p></Reveal>
         </div>
       </section>
 

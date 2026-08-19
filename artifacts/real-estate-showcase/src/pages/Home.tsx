@@ -5,9 +5,9 @@ import { Link } from 'wouter';
 import { Reveal } from '@/components/Shell';
 
 const projects = [
-  { name: 'Morrow House', place: 'Hudson Valley, NY', year: '2024', image: 'https://images.pexels.com/photos/323780/pexels-photo-323780.jpeg?auto=compress&cs=tinysrgb&w=2200' },
-  { name: 'The Stillwater', place: 'West Cornwall, CT', year: '2023', image: 'https://images.pexels.com/photos/1396122/pexels-photo-1396122.jpeg?auto=compress&cs=tinysrgb&w=2200' },
-  { name: 'Aster Court', place: 'Brooklyn, NY', year: '2022', image: 'https://images.pexels.com/photos/323705/pexels-photo-323705.jpeg?auto=compress&cs=tinysrgb&w=2200' },
+  { name: 'Morrow House', place: 'Gwarinpa Valley, ABJ', year: '2024', image: 'https://images.pexels.com/photos/323780/pexels-photo-323780.jpeg?auto=compress&cs=tinysrgb&w=2200' },
+  { name: 'The Stillwater', place: 'Lokogoma Cornwall, CT', year: '2023', image: 'https://images.pexels.com/photos/1396122/pexels-photo-1396122.jpeg?auto=compress&cs=tinysrgb&w=2200' },
+  { name: 'Aster Court', place: 'Jabi, Suburb', year: '2022', image: 'https://images.pexels.com/photos/323705/pexels-photo-323705.jpeg?auto=compress&cs=tinysrgb&w=2200' },
 ];
 
 export default function Home() {
@@ -38,7 +38,7 @@ export default function Home() {
                 <motion.h1 key={`title-${active}`} initial={{ opacity: 0, y: 18 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: .1 }} className="display text-[clamp(4.5rem,12vw,11rem)] leading-[.78] tracking-[-.035em]">{project.name}</motion.h1>
                 <motion.div key={`place-${active}`} initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: .25 }} className="mt-8 flex items-center gap-4 text-sm md:text-base"><span>{project.place}</span><span className="h-px w-9 bg-[hsl(var(--accent))]" /><span>{project.year}</span></motion.div>
               </div>
-              <div className="hidden pb-2 text-right md:block"><p className="mono mb-2 opacity-60">Aperture studio</p><p className="text-sm opacity-80">A considered approach<br />to lasting places in Nigeria.</p></div>
+              <div className="hidden pb-2 text-right md:block"><p className="mono mb-2 opacity-60">BricksTrade </p><p className="text-sm opacity-80">A considered approach<br />to lasting places in Nigeria.</p></div>
             </div>
             <div className="flex items-center justify-between border-t border-[hsl(var(--primary-foreground)/.35)] pt-5">
               <button onClick={() => document.getElementById('intro')?.scrollIntoView({ behavior: 'smooth' })} className="group flex items-center gap-3 text-[10px] uppercase tracking-[.16em]" data-testid="button-scroll-intro">Scroll to explore <ArrowDown size={15} className="transition-transform group-hover:translate-y-1" /></button>
@@ -51,16 +51,16 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div className="absolute right-5 top-1/2 hidden -translate-y-1/2 md:block"><span className="vertical-label mono opacity-50">Aperture / 01 — 03</span></div>
+        <div className="absolute right-5 top-1/2 hidden -translate-y-1/2 md:block"><span className="vertical-label mono opacity-50">BricksTrade / 01 — 03</span></div>
       </section>
 
       <section id="intro" className="px-5 py-24 md:px-10 md:py-40">
         <div className="mx-auto grid max-w-[1400px] gap-16 md:grid-cols-[.7fr_1.3fr] md:gap-24">
-          <Reveal><p className="mono text-[hsl(var(--secondary))]">01 / The studio</p></Reveal>
+          <Reveal><p className="mono text-[hsl(var(--secondary))]">01 / The company</p></Reveal>
           <Reveal delay={.08}>
             <h2 className="display max-w-4xl text-5xl leading-[.94] tracking-[-.02em] md:text-8xl">Real estate is a <em className="text-[hsl(var(--secondary))]">long conversation</em> with a place.</h2>
-            <p className="mt-10 max-w-xl text-base leading-7 text-[hsl(var(--muted-foreground))] md:text-lg">We partner with people who believe a building can do more than occupy land. Aperture is a property studio for considered homes, quiet hotels, and places that become part of the local memory.</p>
-            <Link href="/about" className="group mt-9 inline-flex items-center gap-3 border-b border-[hsl(var(--foreground)/.35)] pb-2 text-xs font-semibold uppercase tracking-[.15em] hover:border-[hsl(var(--accent))]" data-testid="link-discover-studio">Discover the studio <ArrowRight size={16} className="transition-transform group-hover:translate-x-1" /></Link>
+            <p className="mt-10 max-w-xl text-base leading-7 text-[hsl(var(--muted-foreground))] md:text-lg">We partner with people who believe a building can do more than occupy land. BricksTrade is a property developer for considered homes, quiet hotels, and places that become part of the local memory.</p>
+            <Link href="/about" className="group mt-9 inline-flex items-center gap-3 border-b border-[hsl(var(--foreground)/.35)] pb-2 text-xs font-semibold uppercase tracking-[.15em] hover:border-[hsl(var(--accent))]" data-testid="link-discover-studio">Discover the company <ArrowRight size={16} className="transition-transform group-hover:translate-x-1" /></Link>
           </Reveal>
         </div>
       </section>
@@ -75,11 +75,43 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="overflow-hidden px-5 py-24 md:px-10 md:py-36">
-        <div className="mx-auto max-w-[1400px]">
+      <section className="overflow-hidden px-5 py-24 md:py-36">
+        <div className="mx-auto max-w-[1400px] px-5 md:px-10">
           <Reveal><p className="mono mb-9 text-[hsl(var(--secondary))]">03 / Our motto</p></Reveal>
-          <motion.div initial={{ x: -80, opacity: 0 }} whileInView={{ x: 0, opacity: 1 }} viewport={{ once: true }} transition={{ duration: 1 }} className="whitespace-nowrap"><span className="display text-[clamp(5rem,15vw,14rem)] leading-none text-[hsl(var(--foreground)/.1)]">MAKE ROOM FOR </span><span className="display text-[clamp(5rem,15vw,14rem)] leading-none text-[hsl(var(--accent))]">MEANING.</span></motion.div>
-          <div className="mt-12 flex justify-end"><p className="max-w-sm text-sm leading-6 text-[hsl(var(--muted-foreground))]">Not just a set of keys. A point of view, made tangible.</p></div>
+        </div>
+        
+        {/* Infinite Marquee Animation Container */}
+        <div className="flex whitespace-nowrap overflow-hidden">
+          <motion.div 
+            className="flex gap-16 pr-16"
+            animate={{ x: [0, "-100%"] }}
+            transition={{
+              x: {
+                repeat: Infinity,
+                repeatType: "loop",
+                duration: 25, // Adjust this value to make it scroll faster or slower
+                ease: "linear",
+              },
+            }}
+          >
+            {/* First instance of the text */}
+            <div className="flex items-center gap-6">
+              <span className="display text-[clamp(5rem,15vw,14rem)] leading-none text-[hsl(var(--foreground)/.1)]">YOUR PROPERTY,</span>
+              <span className="display text-[clamp(5rem,15vw,14rem)] leading-none text-[hsl(var(--accent))]"> OUR COMMITMENT .</span>
+            </div>
+            
+            {/* Duplicated instance for seamless loop */}
+            <div className="flex items-center gap-6">
+              <span className="display text-[clamp(5rem,15vw,14rem)] leading-none text-[hsl(var(--foreground)/.1)]">YOUR PROPERTY,</span>
+              <span className="display text-[clamp(5rem,15vw,14rem)] leading-none text-[hsl(var(--accent))]"> OUR COMMITMENT .</span>
+            </div>
+          </motion.div>
+        </div>
+
+        <div className="mx-auto max-w-[1400px] px-5 md:px-10 mt-12">
+          <div className="flex justify-end">
+            <p className="max-w-sm text-sm leading-6 text-[hsl(var(--muted-foreground))]">Not just a set of keys. A point of view, made tangible.</p>
+          </div>
         </div>
       </section>
     </div>
