@@ -38,7 +38,7 @@ export default function Home() {
                 <motion.h1 key={`title-${active}`} initial={{ opacity: 0, y: 18 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: .1 }} className="display text-[clamp(4.5rem,12vw,11rem)] leading-[.78] tracking-[-.035em]">{project.name}</motion.h1>
                 <motion.div key={`place-${active}`} initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: .25 }} className="mt-8 flex items-center gap-4 text-sm md:text-base"><span>{project.place}</span><span className="h-px w-9 bg-[hsl(var(--accent))]" /><span>{project.year}</span></motion.div>
               </div>
-              <div className="hidden pb-2 text-right md:block"><p className="mono mb-2 opacity-60">BricksTrade </p><p className="text-sm opacity-80">A considered approach<br />to lasting places in Nigeria.</p></div>
+              <div className="hidden pb-2 text-right md:block"><p className="mono mb-2 opacity-60">BricksTrades </p><p className="text-sm opacity-80">A considered approach<br />to lasting places in Nigeria.</p></div>
             </div>
             <div className="flex items-center justify-between border-t border-[hsl(var(--primary-foreground)/.35)] pt-5">
               <button onClick={() => document.getElementById('intro')?.scrollIntoView({ behavior: 'smooth' })} className="group flex items-center gap-3 text-[10px] uppercase tracking-[.16em]" data-testid="button-scroll-intro">Scroll to explore <ArrowDown size={15} className="transition-transform group-hover:translate-y-1" /></button>
