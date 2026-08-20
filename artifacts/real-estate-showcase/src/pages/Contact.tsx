@@ -20,7 +20,7 @@ export default function Contact() {
     <div className="bg-[hsl(var(--background))]">
       <section className="px-5 pb-24 pt-40 md:px-10 md:pb-36 md:pt-52">
         <div className="mx-auto max-w-[1400px]">
-          <motion.p initial={{ opacity: 0 }} animate={{ opacity: 1 }} className="mono mb-10 text-[hsl(var(--secondary))]">Aperture / Contact</motion.p>
+          <motion.p initial={{ opacity: 0 }} animate={{ opacity: 1 }} className="mono mb-10 text-[hsl(var(--secondary))]">BricksTrade / Contact</motion.p>
           <motion.h1 initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: .8 }} className="display max-w-5xl text-[clamp(5rem,13vw,12rem)] leading-[.78] tracking-[-.04em]">Let’s make<br /><em className="text-[hsl(var(--secondary))]">room.</em></motion.h1>
           <div className="mt-20 grid gap-16 border-t border-[hsl(var(--foreground)/.2)] pt-8 md:grid-cols-[.75fr_1.25fr] md:gap-28">
             <div className="space-y-10">
