@@ -90,7 +90,7 @@ export function Shell({ children }: { children: React.ReactNode }) {
             <Link 
               href="/contact" 
               onClick={handleNavClick}
-              className="group flex items-center gap-2 border border-[hsl(var(--foreground)/.35)] px-4 py-2.5 text-[10px] uppercase tracking-[.16em] transition-colors hover:border-[hsl(var(--accent))] hover:text-[hsl(var(--accent))]" 
+              className="group flex items-center gap-2 border border-[hsl(var(--foreground)/.35)] px-4 py-2.5 text-[10px] uppercase tracking-[.16em] transition-colors hover:border-[hsl(var(--accent-orange))] hover:text-[hsl(var(--accent-orange))]" 
               data-testid="link-enquire"
             >
               Enquire <ArrowUpRight size={13} className="transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
@@ -119,7 +119,7 @@ export function Shell({ children }: { children: React.ReactNode }) {
                     className="display text-6xl leading-none sm:text-8xl" 
                     data-testid={`link-mobile-nav-${item.label.toLowerCase()}`}
                   >
-                    {item.label}<span className="text-[hsl(var(--accent))]">.</span>
+                    {item.label}<span className="text-[hsl(var(--accent-orange))]">.</span>
                   </Link>
                 </motion.div>
               ))}
@@ -159,7 +159,7 @@ function Footer() {
                   key={item.href} 
                   href={item.href} 
                   onClick={handleFooterNavClick}
-                  className="line-link opacity-80 hover:opacity-100" 
+                  className="line-link opacity-80 hover:opacity-100 hover:text-[hsl(var(--accent-orange))]" 
                   data-testid={`link-footer-${item.label.toLowerCase()}`}
                 >
                   {item.label}
