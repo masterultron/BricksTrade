@@ -2,14 +2,15 @@ import { motion, useScroll, useTransform } from 'framer-motion';
 import { ArrowUpRight, MoveDown } from 'lucide-react';
 import { Link } from 'wouter';
 import { Reveal } from '@/components/Shell';
+import realEstate1 from '@/images/real-estate1.jpeg';
+import realEstate2 from '@/images/real-estate2.jpeg';
+import realEstate3 from '@/images/real-estate3.jpeg';
+
 
 const portfolio = [
-  { title: 'Morrow House', type: 'Private residence', place: 'Gwarinpa, Abuja', image: 'https://images.pexels.com/photos/2079249/pexels-photo-2079249.jpeg?auto=compress&cs=tinysrgb&w=1600', size: 'large' },
-  { title: 'Aster Court', type: 'Urban residences', place: 'Wuse 2, Abuja', image: 'https://images.pexels.com/photos/323705/pexels-photo-323705.jpeg?auto=compress&cs=tinysrgb&w=1400', size: 'small' },
-  { title: 'The Stillwater', type: 'Hospitality', place: 'Jabi, Abuja', image: 'https://images.pexels.com/photos/1396122/pexels-photo-1396122.jpeg?auto=compress&cs=tinysrgb&w=1400', size: 'small' },
-  { title: 'Silo No. 4', type: 'Adaptive reuse', place: 'Maitama, Abuja', image: 'https://images.pexels.com/photos/323780/pexels-photo-323780.jpeg?auto=compress&cs=tinysrgb&w=1600', size: 'large' },
-  { title: 'Northline', type: 'Mixed-use', place: 'Victoria Island, Lagos', image: 'https://images.pexels.com/photos/1022936/pexels-photo-1022936.jpeg?auto=compress&cs=tinysrgb&w=1400', size: 'small' },
-  { title: 'Casa Lento', type: 'Private residence', place: 'Asokoro, Abuja', image: 'https://images.pexels.com/photos/1115804/pexels-photo-1115804.jpeg?auto=compress&cs=tinysrgb&w=1400', size: 'small' },
+  { title: 'Morrow House', type: 'Private residence', place: 'Gwarinpa, Abuja', image: realEstate1, size: 'large' },
+  { title: 'Aster Court', type: 'Urban residences', place: 'Wuse 2, Abuja', image: realEstate2, size: 'small' },
+  { title: 'The Stillwater', type: 'Hospitality', place: 'Jabi, Abuja', image: realEstate3, size: 'small' },
 ];
 
 export default function About() {
