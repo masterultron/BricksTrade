@@ -3,13 +3,16 @@ import { AnimatePresence, motion, useReducedMotion } from 'framer-motion';
 import { ArrowDown, ArrowRight, Pause, Play } from 'lucide-react';
 import { Link } from 'wouter';
 import { Reveal } from '@/components/Shell';
+import realEstate1 from '@/images/real-estate1.jpeg';
+import realEstate2 from '@/images/real-estate2.jpeg';
+import realEstate3 from '@/images/real-estate3.jpeg';
+
 
 const projects = [
-  { name: 'Morrow House', place: 'Gwarinpa Valley, ABJ', year: '2024', image: 'https://images.pexels.com/photos/323780/pexels-photo-323780.jpeg?auto=compress&cs=tinysrgb&w=2200' },
-  { name: 'The Stillwater', place: 'Lokogoma Cornwall, CT', year: '2023', image: 'https://images.pexels.com/photos/1396122/pexels-photo-1396122.jpeg?auto=compress&cs=tinysrgb&w=2200' },
-  { name: 'Aster Court', place: 'Jabi, Suburb', year: '2022', image: 'https://images.pexels.com/photos/323705/pexels-photo-323705.jpeg?auto=compress&cs=tinysrgb&w=2200' },
+  { name: 'Morrow House', place: 'Gwarinpa Valley, ABJ', year: '2024', images: realEstate1 },
+  { name: 'The Stillwater', place: 'Lokogoma Cornwall, CT', year: '2023', images: realEstate2 },
+  { name: 'Aster Court', place: 'Jabi, Suburb', year: '2022', images: realEstate3 },
 ];
-
 export default function Home() {
   const [active, setActive] = useState(0);
   const [paused, setPaused] = useState(false);
@@ -26,7 +29,7 @@ export default function Home() {
     <div className="bg-[hsl(var(--background))]">
       <section className="relative flex min-h-[100dvh] items-end overflow-hidden bg-[hsl(var(--primary))] text-[hsl(var(--primary-foreground))]">
         <AnimatePresence mode="sync">
-          <motion.img key={project.image} src={project.image} alt={`${project.name} architecture`} initial={{ opacity: 0, scale: 1.09 }} animate={{ opacity: 1, scale: 1 }} exit={{ opacity: 0 }} transition={{ duration: 1.4, ease: 'easeInOut' }} className="absolute inset-0 h-full w-full object-cover object-center" />
+          <motion.img key={project.images} src={project.images} alt={`${project.name} architecture`} initial={{ opacity: 0, scale: 1.09 }} animate={{ opacity: 1, scale: 1 }} exit={{ opacity: 0 }} transition={{ duration: 1.4, ease: 'easeInOut' }} className="absolute inset-0 h-full w-full object-cover object-center" />
         </AnimatePresence>
         <div className="absolute inset-0 bg-[linear-gradient(90deg,hsl(211_50%_14%/.82)_0%,hsl(211_50%_14%/.34)_55%,hsl(211_50%_14%/.16)_100%)]" />
         <div className="absolute inset-0 bg-[linear-gradient(0deg,hsl(211_50%_14%/.72),transparent_60%)]" />
