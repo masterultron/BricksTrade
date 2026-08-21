@@ -9,9 +9,9 @@ import jabiLakeviewTerraces from '@/images/jabi-lakeview-terraces.jpeg';
 
 
 const projects = [
-  { name: 'Gwarinpa Heights', place: 'Gwarinpa, Abuja', year: '2024', image: gwarinpaHeights },
-  { name: 'Guzape Court', place: 'Guzape, Abuja', year: '2023', image: guzapeCourt },
-  { name: 'Jabi Lakeview Terraces', place: 'Jabi, Abuja', year: '2022', image: jabiLakeviewTerraces },
+  { name: 'Gwarinpa Heights', place: 'Gwarinpa, Abuja', year: '2026', image: gwarinpaHeights },
+  { name: 'Guzape Court', place: 'Guzape, Abuja', year: '2026', image: guzapeCourt },
+  { name: 'Jabi Lakeview Terraces', place: 'Jabi, Abuja', year: '2026', image: jabiLakeviewTerraces },
 ];
 export default function Home() {
   const [active, setActive] = useState(0);
