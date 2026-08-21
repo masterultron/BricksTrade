@@ -18,7 +18,7 @@ export default function About() {
   return (
     <div className="bg-[hsl(var(--background))]">
       <section className="relative min-h-[88dvh] overflow-hidden bg-[hsl(var(--primary))] px-5 pb-16 pt-40 text-[hsl(var(--primary-foreground))] md:px-10 md:pb-24 md:pt-52">
-        <div className="absolute right-0 top-0 h-full w-[43%] overflow-hidden opacity-50"><motion.img style={{ y: introY }} src="https://images.pexels.com/photos/1732414/pexels-photo-1732414.jpeg?auto=compress&cs=tinysrgb&w=1600" alt="Brutalist concrete facade" className="h-[115%] w-full object-cover grayscale" /><div className="absolute inset-0 bg-[linear-gradient(90deg,hsl(211_44%_13%),transparent)]" /></div>
+        <div className="absolute right-0 top-0 h-full w-[43%] overflow-hidden opacity-50"><motion.img style={{ y: introY }} src="https://images.pexels.com/photos/1732414/pexels-photo-1732414.jpeg?auto=compress&cs=tinysrgb&w=1600" alt="Brutalist concrete facade" className="h-[115%] w-full object-cover grayscale" /><div className="absolute inset-0 bg-[linear-gradient(90deg,hsl(211_50%_14%),transparent)]" /></div>
         <div className="relative mx-auto max-w-[1400px]">
           <Reveal><p className="mono mb-10 text-[hsl(var(--accent))]">BricksTrade / The Developer</p></Reveal>
           <motion.h1 initial={{ opacity: 0, y: 35 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 1 }} className="display max-w-4xl text-[clamp(5rem,13vw,12rem)] leading-[.78] tracking-[-.04em]">The long<br /><em className="text-[hsl(var(--accent))]">view.</em></motion.h1>
@@ -42,8 +42,8 @@ export default function About() {
                 <article className="group">
                   <div className={`relative overflow-hidden ${item.size === 'large' ? 'aspect-[.83/1]' : 'aspect-[1.28/1]'}`}>
                     <img src={item.image} alt={`${item.title} project`} className="image-lift h-full w-full object-cover" />
-                    <div className="absolute inset-0 bg-[linear-gradient(0deg,hsl(211_44%_13%/.7),transparent_50%)] opacity-0 transition-opacity duration-500 group-hover:opacity-100" />
-                    <span className="absolute bottom-5 right-5 flex h-10 w-10 translate-y-3 items-center justify-center rounded-full bg-[hsl(var(--accent))] text-[hsl(var(--foreground))] opacity-0 transition-all duration-500 group-hover:translate-y-0 group-hover:opacity-100"><ArrowUpRight size={17} /></span>
+                    <div className="absolute inset-0 bg-[linear-gradient(0deg,hsl(211_50%_14%/.7),transparent_50%)] opacity-0 transition-opacity duration-500 group-hover:opacity-100" />
+                    <span className="absolute bottom-5 right-5 flex h-10 w-10 translate-y-3 items-center justify-center rounded-full bg-[hsl(var(--accent-orange))] text-[hsl(var(--accent-orange-foreground))] opacity-0 transition-all duration-500 group-hover:translate-y-0 group-hover:opacity-100"><ArrowUpRight size={17} /></span>
                   </div>
                   <div className="mt-5 flex items-start justify-between border-t border-[hsl(var(--foreground)/.16)] pt-4"><div><h3 className="display text-3xl">{item.title}</h3><p className="mt-1 text-xs text-[hsl(var(--muted-foreground))]">{item.type} · {item.place}</p></div><span className="mono text-[hsl(var(--secondary))]">0{index + 1}</span></div>
                 </article>
