@@ -2,6 +2,8 @@ import { useEffect, useState } from 'react';
 import { AnimatePresence, motion } from 'framer-motion';
 import { ArrowUpRight, Menu, X } from 'lucide-react';
 import { Link, useLocation } from 'wouter';
+import logoIcon from '@/images/logo-icon.png';
+import logoFull from '@/images/logo-full.png';
 
 const navItems = [
   { href: '/', label: 'Home' },
@@ -69,8 +71,12 @@ export function Shell({ children }: { children: React.ReactNode }) {
       >
         <div className="flex items-center justify-between">
           <Link href="/" onClick={handleNavClick} className="group flex items-center gap-3" data-testid="link-logo">
-            <span className="flex h-9 w-9 items-center justify-center border border-[hsl(var(--accent))] text-[hsl(var(--accent))] transition-transform duration-500 group-hover:rotate-45">
-              <span className="-rotate-45 display text-xl group-hover:rotate-0 transition-transform duration-500">A</span>
+            <span className="flex h-11 w-11 items-center justify-center">
+              <img 
+                src={logoIcon} 
+                alt="BricksTrade logo" 
+                className="h-full w-full object-contain transition-transform duration-500 group-hover:rotate-[8deg]" 
+              />
             </span>
             <span className="hidden text-[11px] font-semibold uppercase tracking-[.26em] text-[hsl(var(--foreground))] sm:block">Brickstrade<br /><span className="text-[hsl(var(--muted-foreground))]">Property Developer</span></span>
           </Link>
@@ -148,7 +154,7 @@ function Footer() {
       <div className="mx-auto max-w-[1400px]">
         <div className="grid gap-12 md:grid-cols-[1.4fr_.7fr_.7fr]">
           <div>
-            <p className="mono mb-6 text-[hsl(var(--accent))]">BricksTrade / Property Developer</p>
+            <img src={logoFull} alt="BricksTrade — Your Property, Our Commitment" className="mb-8 h-auto w-full max-w-[280px]" />
             <h2 className="display max-w-xl text-5xl leading-[.95] md:text-7xl">Places with a point of view.</h2>
           </div>
           <div>

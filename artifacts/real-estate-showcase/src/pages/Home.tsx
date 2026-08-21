@@ -3,15 +3,15 @@ import { AnimatePresence, motion, useReducedMotion } from 'framer-motion';
 import { ArrowDown, ArrowRight, Pause, Play } from 'lucide-react';
 import { Link } from 'wouter';
 import { Reveal } from '@/components/Shell';
-import realEstate1 from '@/images/real-estate1.jpeg';
-import realEstate2 from '@/images/real-estate2.jpeg';
-import realEstate3 from '@/images/real-estate3.jpeg';
+import gwarinpaHeights from '@/images/gwarinpa-heights.jpeg';
+import guzapeCourt from '@/images/guzape-court.jpeg';
+import jabiLakeviewTerraces from '@/images/jabi-lakeview-terraces.jpeg';
 
 
 const projects = [
-  { name: 'Morrow House', place: 'Gwarinpa Valley, ABJ', year: '2024', images: realEstate1 },
-  { name: 'The Stillwater', place: 'Lokogoma Cornwall, CT', year: '2023', images: realEstate2 },
-  { name: 'Aster Court', place: 'Jabi, Suburb', year: '2022', images: realEstate3 },
+  { name: 'Gwarinpa Heights', place: 'Gwarinpa, Abuja', year: '2024', image: gwarinpaHeights },
+  { name: 'Guzape Court', place: 'Guzape, Abuja', year: '2023', image: guzapeCourt },
+  { name: 'Jabi Lakeview Terraces', place: 'Jabi, Abuja', year: '2022', image: jabiLakeviewTerraces },
 ];
 export default function Home() {
   const [active, setActive] = useState(0);
@@ -29,7 +29,7 @@ export default function Home() {
     <div className="bg-[hsl(var(--background))]">
       <section className="relative flex min-h-[100dvh] items-end overflow-hidden bg-[hsl(var(--primary))] text-[hsl(var(--primary-foreground))]">
         <AnimatePresence mode="sync">
-          <motion.img key={project.images} src={project.images} alt={`${project.name} architecture`} initial={{ opacity: 0, scale: 1.09 }} animate={{ opacity: 1, scale: 1 }} exit={{ opacity: 0 }} transition={{ duration: 1.4, ease: 'easeInOut' }} className="absolute inset-0 h-full w-full object-cover object-center" />
+          <motion.img key={project.image} src={project.image} alt={`${project.name} architecture`} initial={{ opacity: 0, scale: 1.09 }} animate={{ opacity: 1, scale: 1 }} exit={{ opacity: 0 }} transition={{ duration: 1.4, ease: 'easeInOut' }} className="absolute inset-0 h-full w-full object-cover object-center" />
         </AnimatePresence>
         <div className="absolute inset-0 bg-[linear-gradient(90deg,hsl(211_50%_14%/.82)_0%,hsl(211_50%_14%/.34)_55%,hsl(211_50%_14%/.16)_100%)]" />
         <div className="absolute inset-0 bg-[linear-gradient(0deg,hsl(211_50%_14%/.72),transparent_60%)]" />
@@ -41,7 +41,7 @@ export default function Home() {
                 <motion.h1 key={`title-${active}`} initial={{ opacity: 0, y: 18 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: .1 }} className="display text-[clamp(4.5rem,12vw,11rem)] leading-[.78] tracking-[-.035em]">{project.name}</motion.h1>
                 <motion.div key={`place-${active}`} initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: .25 }} className="mt-8 flex items-center gap-4 text-sm md:text-base"><span>{project.place}</span><span className="h-px w-9 bg-[hsl(var(--accent-orange))]" /><span>{project.year}</span></motion.div>
               </div>
-              <div className="hidden pb-2 text-right md:block"><p className="mono mb-2 opacity-60">BricksTrades </p><p className="text-sm opacity-80">A considered approach<br />to lasting places in Nigeria.</p></div>
+              <div className="hidden pb-2 text-right md:block"><p className="mono mb-2 opacity-60">BricksTrade </p><p className="text-sm opacity-80">A considered approach<br />to lasting places in Nigeria.</p></div>
             </div>
             <div className="flex items-center justify-between border-t border-[hsl(var(--primary-foreground)/.35)] pt-5">
               <button onClick={() => document.getElementById('intro')?.scrollIntoView({ behavior: 'smooth' })} className="group flex items-center gap-3 text-[10px] uppercase tracking-[.16em]" data-testid="button-scroll-intro">Scroll to explore <ArrowDown size={15} className="transition-transform group-hover:translate-y-1" /></button>
@@ -72,8 +72,8 @@ export default function Home() {
         <div className="mx-auto max-w-[1400px]">
           <div className="mb-12 flex items-end justify-between"><p className="mono text-[hsl(var(--accent))]">02 / In focus</p><span className="mono opacity-60">Selected work / 2011—25</span></div>
           <div className="grid gap-8 md:grid-cols-[1.35fr_.65fr] md:items-end">
-            <Reveal><div className="group overflow-hidden"><img src={realEstate2} alt="Morrow House exterior" className="image-lift aspect-[1.25/1] w-full object-cover" /><div className="mt-5 flex items-start justify-between"><div><h3 className="display text-4xl">Morrow House</h3><p className="mt-1 text-sm opacity-60">Gwarinpa, Abuja, Nigeria</p></div><span className="mono text-[hsl(var(--accent))]">01—03</span></div></div></Reveal>
-            <Reveal delay={.12}><div className="md:pb-14"><p className="display max-w-xs text-4xl leading-[.98]">A room, a view, a life in balance.</p><p className="mt-6 max-w-xs text-sm leading-6 opacity-60">A house held lightly in its landscape, finished in charred cedar and morning light.</p><Link href="/about" className="group mt-10 inline-flex items-center gap-3 text-xs uppercase tracking-[.15em] text-[hsl(var(--accent-orange))]" data-testid="link-view-projects">View selected projects <ArrowRight size={15} className="transition-transform group-hover:translate-x-1" /></Link></div></Reveal>
+            <Reveal><div className="group overflow-hidden"><img src={gwarinpaHeights} alt="Gwarinpa Heights exterior" className="image-lift aspect-[1.25/1] w-full object-cover" /><div className="mt-5 flex items-start justify-between"><div><h3 className="display text-4xl">Gwarinpa Heights</h3><p className="mt-1 text-sm opacity-60">Gwarinpa, Abuja, Nigeria</p></div><span className="mono text-[hsl(var(--accent))]">01—03</span></div></div></Reveal>
+            <Reveal delay={.12}><div className="md:pb-14"><p className="display max-w-xs text-4xl leading-[.98]">A room, a view, a life in balance.</p><p className="mt-6 max-w-xs text-sm leading-6 opacity-60">A terrace held close to its neighbors, finished in warm cream and quiet charcoal.</p><Link href="/about" className="group mt-10 inline-flex items-center gap-3 text-xs uppercase tracking-[.15em] text-[hsl(var(--accent-orange))]" data-testid="link-view-projects">View selected projects <ArrowRight size={15} className="transition-transform group-hover:translate-x-1" /></Link></div></Reveal>
           </div>
         </div>
       </section>

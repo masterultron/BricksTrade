@@ -2,15 +2,15 @@ import { motion, useScroll, useTransform } from 'framer-motion';
 import { ArrowUpRight, MoveDown } from 'lucide-react';
 import { Link } from 'wouter';
 import { Reveal } from '@/components/Shell';
-import realEstate1 from '@/images/real-estate1.jpeg';
-import realEstate2 from '@/images/real-estate2.jpeg';
-import realEstate3 from '@/images/real-estate3.jpeg';
+import gwarinpaHeights from '@/images/gwarinpa-heights.jpeg';
+import guzapeCourt from '@/images/guzape-court.jpeg';
+import jabiLakeviewTerraces from '@/images/jabi-lakeview-terraces.jpeg';
 
 
 const portfolio = [
-  { title: 'Morrow House', type: 'Private residence', place: 'Gwarinpa, Abuja', image: realEstate1, size: 'large' },
-  { title: 'Aster Court', type: 'Urban residences', place: 'Wuse 2, Abuja', image: realEstate2, size: 'small' },
-  { title: 'The Stillwater', type: 'Hospitality', place: 'Jabi, Abuja', image: realEstate3, size: 'small' },
+  { title: 'Gwarinpa Heights', type: 'Terrace residences', place: 'Gwarinpa, Abuja', image: gwarinpaHeights, size: 'large' },
+  { title: 'Guzape Court', type: 'Urban residences', place: 'Guzape, Abuja', image: guzapeCourt, size: 'small' },
+  { title: 'Jabi Lakeview Terraces', type: 'Terrace residences', place: 'Jabi, Abuja', image: jabiLakeviewTerraces, size: 'small' },
 ];
 
 export default function About() {
@@ -36,7 +36,7 @@ export default function About() {
 
       <section className="bg-[hsl(var(--muted))] px-5 py-24 md:px-10 md:py-36">
         <div className="mx-auto max-w-[1400px]">
-          <Reveal><div className="mb-16 flex items-end justify-between"><p className="mono text-[hsl(var(--secondary))]">02 / The work</p><span className="mono text-[hsl(var(--muted-foreground))]">Six places, one point of view</span></div></Reveal>
+          <Reveal><div className="mb-16 flex items-end justify-between"><p className="mono text-[hsl(var(--secondary))]">02 / The work</p><span className="mono text-[hsl(var(--muted-foreground))]">{portfolio.length} place{portfolio.length !== 1 ? 's' : ''}, one point of view</span></div></Reveal>
           <div className="grid gap-x-8 gap-y-20 md:grid-cols-2">
             {portfolio.map((item, index) => (
               <Reveal key={item.title} delay={index % 2 ? .1 : 0} className={item.size === 'large' ? 'md:row-span-2' : ''}>
