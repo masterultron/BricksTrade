@@ -39,25 +39,25 @@
 
 :root {
   --background: 42 24% 94%;
-  --foreground: 211 50% 14%;
+  --foreground: 210 100% 12%;
   --border: 38 15% 79%;
   --input: 38 15% 79%;
-  --ring: 43 72% 50%;
+  --ring: 35 71% 45%;
   --card: 43 23% 91%;
-  --card-foreground: 211 50% 14%;
+  --card-foreground: 210 100% 12%;
   --card-border: 38 15% 79%;
   --popover: 42 24% 94%;
-  --popover-foreground: 211 50% 14%;
+  --popover-foreground: 210 100% 12%;
   --popover-border: 38 15% 79%;
-  --primary: 211 50% 14%;
+  --primary: 210 100% 12%;
   --primary-foreground: 42 24% 94%;
   --secondary: 150 38% 27%;
   --secondary-foreground: 42 24% 94%;
   --muted: 39 18% 87%;
   --muted-foreground: 211 14% 41%;
-  --accent: 43 72% 50%;
-  --accent-foreground: 211 50% 14%;
-  --accent-orange: 22 82% 53%;
+  --accent: 35 71% 45%;
+  --accent-foreground: 42 24% 94%;
+  --accent-orange: 28 88% 54%;
   --accent-orange-foreground: 42 24% 94%;
   --destructive: 4 64% 46%;
   --destructive-foreground: 42 24% 94%;
@@ -65,27 +65,27 @@
   --app-font-sans: 'DM Sans', sans-serif;
   --app-font-serif: 'Instrument Serif', serif;
   --app-font-mono: 'DM Mono', monospace;
-  --shadow: 0 18px 60px hsl(211 50% 14% / 0.13);
+  --shadow: 0 18px 60px hsl(210 100% 12% / 0.13);
 }
 
 .dark {
-  --background: 211 50% 14%;
+  --background: 210 100% 12%;
   --foreground: 42 24% 94%;
-  --card: 211 38% 17%;
+  --card: 210 90% 15%;
   --card-foreground: 42 24% 94%;
-  --border: 211 25% 29%;
-  --input: 211 25% 29%;
+  --border: 210 60% 26%;
+  --input: 210 60% 26%;
   --primary: 42 24% 94%;
-  --primary-foreground: 211 50% 14%;
+  --primary-foreground: 210 100% 12%;
   --secondary: 150 38% 40%;
   --secondary-foreground: 42 24% 94%;
-  --muted: 211 28% 23%;
+  --muted: 210 60% 20%;
   --muted-foreground: 39 15% 70%;
-  --accent: 43 72% 50%;
-  --accent-foreground: 211 50% 14%;
-  --accent-orange: 22 82% 58%;
-  --accent-orange-foreground: 211 50% 14%;
-  --ring: 43 72% 50%;
+  --accent: 35 71% 45%;
+  --accent-foreground: 42 24% 94%;
+  --accent-orange: 28 88% 54%;
+  --accent-orange-foreground: 210 100% 12%;
+  --ring: 35 71% 45%;
 }
 
 * { box-sizing: border-box; }

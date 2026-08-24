@@ -9,9 +9,9 @@ import jabiLakeviewTerraces from '@/images/jabi-lakeview-terraces.jpeg';
 
 
 const projects = [
-  { name: 'Gwarinpa Heights', place: 'Gwarinpa, Abuja', year: '2026', image: gwarinpaHeights },
-  { name: 'Guzape Court', place: 'Guzape, Abuja', year: '2026', image: guzapeCourt },
-  { name: 'Jabi Lakeview Terraces', place: 'Jabi, Abuja', year: '2026', image: jabiLakeviewTerraces },
+  { name: 'Gwarinpa Heights', place: 'Gwarinpa, Abuja', year: '2024', image: gwarinpaHeights },
+  { name: 'Guzape Court', place: 'Guzape, Abuja', year: '2023', image: guzapeCourt },
+  { name: 'Jabi Lakeview Terraces', place: 'Jabi, Abuja', year: '2022', image: jabiLakeviewTerraces },
 ];
 export default function Home() {
   const [active, setActive] = useState(0);
@@ -31,8 +31,8 @@ export default function Home() {
         <AnimatePresence mode="sync">
           <motion.img key={project.image} src={project.image} alt={`${project.name} architecture`} initial={{ opacity: 0, scale: 1.09 }} animate={{ opacity: 1, scale: 1 }} exit={{ opacity: 0 }} transition={{ duration: 1.4, ease: 'easeInOut' }} className="absolute inset-0 h-full w-full object-cover object-center" />
         </AnimatePresence>
-        <div className="absolute inset-0 bg-[linear-gradient(90deg,hsl(211_50%_14%/.82)_0%,hsl(211_50%_14%/.34)_55%,hsl(211_50%_14%/.16)_100%)]" />
-        <div className="absolute inset-0 bg-[linear-gradient(0deg,hsl(211_50%_14%/.72),transparent_60%)]" />
+        <div className="absolute inset-0 bg-[linear-gradient(90deg,hsl(210_100%_12%/.82)_0%,hsl(210_100%_12%/.34)_55%,hsl(210_100%_12%/.16)_100%)]" />
+        <div className="absolute inset-0 bg-[linear-gradient(0deg,hsl(210_100%_12%/.72),transparent_60%)]" />
         <div className="relative z-10 w-full px-5 pb-9 md:px-10 md:pb-12">
           <div className="mx-auto max-w-[1400px]">
             <div className="mb-10 flex items-end justify-between gap-6 md:mb-16">
@@ -59,16 +59,16 @@ export default function Home() {
 
       <section id="intro" className="px-5 py-24 md:px-10 md:py-40">
         <div className="mx-auto grid max-w-[1400px] gap-16 md:grid-cols-[.7fr_1.3fr] md:gap-24">
-          <Reveal><p className="mono text-[hsl(var(--secondary))]">01 / The company</p></Reveal>
+          <Reveal><p className="mono text-[hsl(var(--accent))]">01 / The company</p></Reveal>
           <Reveal delay={.08}>
-            <h2 className="display max-w-4xl text-5xl leading-[.94] tracking-[-.02em] md:text-8xl">Real estate is a <em className="text-[hsl(var(--secondary))]">long conversation</em> with a place.</h2>
+            <h2 className="display max-w-4xl text-5xl leading-[.94] tracking-[-.02em] md:text-8xl">Real estate is a <em className="text-[hsl(var(--accent-orange))]">long conversation</em> with a place.</h2>
             <p className="mt-10 max-w-xl text-base leading-7 text-[hsl(var(--muted-foreground))] md:text-lg">We partner with people who believe a building can do more than occupy land. BricksTrade is a property developer for considered homes, quiet hotels, and places that become part of the local memory.</p>
             <Link href="/about" className="group mt-9 inline-flex items-center gap-3 border-b border-[hsl(var(--foreground)/.35)] pb-2 text-xs font-semibold uppercase tracking-[.15em] hover:border-[hsl(var(--accent-orange))] hover:text-[hsl(var(--accent-orange))]" data-testid="link-discover-studio">Discover the company <ArrowRight size={16} className="transition-transform group-hover:translate-x-1" /></Link>
           </Reveal>
         </div>
       </section>
 
-      <section className="bg-[hsl(var(--secondary))] px-5 py-20 text-[hsl(var(--background))] md:px-10 md:py-28">
+      <section className="bg-[hsl(var(--primary))] px-5 py-20 text-[hsl(var(--primary-foreground))] md:px-10 md:py-28">
         <div className="mx-auto max-w-[1400px]">
           <div className="mb-12 flex items-end justify-between"><p className="mono text-[hsl(var(--accent))]">02 / In focus</p><span className="mono opacity-60">Selected work / 2011—25</span></div>
           <div className="grid gap-8 md:grid-cols-[1.35fr_.65fr] md:items-end">
@@ -80,7 +80,7 @@ export default function Home() {
 
       <section className="overflow-hidden px-5 py-24 md:py-36">
         <div className="mx-auto max-w-[1400px] px-5 md:px-10">
-          <Reveal><p className="mono mb-9 text-[hsl(var(--secondary))]">03 / Our motto</p></Reveal>
+          <Reveal><p className="mono mb-9 text-[hsl(var(--accent))]">03 / Our motto</p></Reveal>
         </div>
         
         {/* Infinite Marquee Animation Container */}
@@ -117,4 +117,4 @@ export default function Home() {
       </section>
     </div>
   );
-}
+} 

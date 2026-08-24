@@ -19,7 +19,7 @@ export default function About() {
   return (
     <div className="bg-[hsl(var(--background))]">
       <section className="relative min-h-[88dvh] overflow-hidden bg-[hsl(var(--primary))] px-5 pb-16 pt-40 text-[hsl(var(--primary-foreground))] md:px-10 md:pb-24 md:pt-52">
-        <div className="absolute right-0 top-0 h-full w-[43%] overflow-hidden opacity-50"><motion.img style={{ y: introY }} src="https://images.pexels.com/photos/1732414/pexels-photo-1732414.jpeg?auto=compress&cs=tinysrgb&w=1600" alt="Brutalist concrete facade" className="h-[115%] w-full object-cover grayscale" /><div className="absolute inset-0 bg-[linear-gradient(90deg,hsl(211_50%_14%),transparent)]" /></div>
+        <div className="absolute right-0 top-0 h-full w-[43%] overflow-hidden opacity-50"><motion.img style={{ y: introY }} src="https://images.pexels.com/photos/1732414/pexels-photo-1732414.jpeg?auto=compress&cs=tinysrgb&w=1600" alt="Brutalist concrete facade" className="h-[115%] w-full object-cover grayscale" /><div className="absolute inset-0 bg-[linear-gradient(90deg,hsl(210_100%_12%),transparent)]" /></div>
         <div className="relative mx-auto max-w-[1400px]">
           <Reveal><p className="mono mb-10 text-[hsl(var(--accent))]">BricksTrade / The Developer</p></Reveal>
           <motion.h1 initial={{ opacity: 0, y: 35 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 1 }} className="display max-w-4xl text-[clamp(5rem,13vw,12rem)] leading-[.78] tracking-[-.04em]">The long<br /><em className="text-[hsl(var(--accent))]">view.</em></motion.h1>
@@ -29,24 +29,24 @@ export default function About() {
 
       <section id="story" className="px-5 py-24 md:px-10 md:py-40">
         <div className="mx-auto grid max-w-[1400px] gap-16 md:grid-cols-[.65fr_1.35fr] md:gap-28">
-          <Reveal><p className="mono text-[hsl(var(--secondary))]">01 / Why we exist</p></Reveal>
-          <Reveal delay={.1}><h2 className="display max-w-4xl text-5xl leading-[.95] md:text-8xl">We make places that <em className="text-[hsl(var(--secondary))]">hold their value</em> in more ways than one.</h2><p className="mt-10 max-w-2xl text-base leading-7 text-[hsl(var(--muted-foreground))] md:text-lg">BricksTrade was founded in Abuja by a small group of architects, developers, and listeners. We were tired of the distance between a beautiful drawing and a meaningful address. So we built properties that keeps the two in conversation.</p></Reveal>
+          <Reveal><p className="mono text-[hsl(var(--accent))]">01 / Why we exist</p></Reveal>
+          <Reveal delay={.1}><h2 className="display max-w-4xl text-5xl leading-[.95] md:text-8xl">We make places that <em className="text-[hsl(var(--accent-orange))]">hold their value</em> in more ways than one.</h2><p className="mt-10 max-w-2xl text-base leading-7 text-[hsl(var(--muted-foreground))] md:text-lg">BricksTrade was founded in Abuja by a small group of architects, developers, realtors and listeners. We were tired of the distance between a beautiful drawing and a meaningful address. So we built properties that keeps the two in conversation.</p></Reveal>
         </div>
       </section>
 
       <section className="bg-[hsl(var(--muted))] px-5 py-24 md:px-10 md:py-36">
         <div className="mx-auto max-w-[1400px]">
-          <Reveal><div className="mb-16 flex items-end justify-between"><p className="mono text-[hsl(var(--secondary))]">02 / The work</p><span className="mono text-[hsl(var(--muted-foreground))]">{portfolio.length} place{portfolio.length !== 1 ? 's' : ''}, one point of view</span></div></Reveal>
+          <Reveal><div className="mb-16 flex items-end justify-between"><p className="mono text-[hsl(var(--accent))]">02 / The work</p><span className="mono text-[hsl(var(--muted-foreground))]">{portfolio.length} place{portfolio.length !== 1 ? 's' : ''}, one point of view</span></div></Reveal>
           <div className="grid gap-x-8 gap-y-20 md:grid-cols-2">
             {portfolio.map((item, index) => (
               <Reveal key={item.title} delay={index % 2 ? .1 : 0} className={item.size === 'large' ? 'md:row-span-2' : ''}>
                 <article className="group">
                   <div className={`relative overflow-hidden ${item.size === 'large' ? 'aspect-[.83/1]' : 'aspect-[1.28/1]'}`}>
                     <img src={item.image} alt={`${item.title} project`} className="image-lift h-full w-full object-cover" />
-                    <div className="absolute inset-0 bg-[linear-gradient(0deg,hsl(211_50%_14%/.7),transparent_50%)] opacity-0 transition-opacity duration-500 group-hover:opacity-100" />
+                    <div className="absolute inset-0 bg-[linear-gradient(0deg,hsl(210_100%_12%/.7),transparent_50%)] opacity-0 transition-opacity duration-500 group-hover:opacity-100" />
                     <span className="absolute bottom-5 right-5 flex h-10 w-10 translate-y-3 items-center justify-center rounded-full bg-[hsl(var(--accent-orange))] text-[hsl(var(--accent-orange-foreground))] opacity-0 transition-all duration-500 group-hover:translate-y-0 group-hover:opacity-100"><ArrowUpRight size={17} /></span>
                   </div>
-                  <div className="mt-5 flex items-start justify-between border-t border-[hsl(var(--foreground)/.16)] pt-4"><div><h3 className="display text-3xl">{item.title}</h3><p className="mt-1 text-xs text-[hsl(var(--muted-foreground))]">{item.type} · {item.place}</p></div><span className="mono text-[hsl(var(--secondary))]">0{index + 1}</span></div>
+                  <div className="mt-5 flex items-start justify-between border-t border-[hsl(var(--foreground)/.16)] pt-4"><div><h3 className="display text-3xl">{item.title}</h3><p className="mt-1 text-xs text-[hsl(var(--muted-foreground))]">{item.type} · {item.place}</p></div><span className="mono text-[hsl(var(--accent))]">0{index + 1}</span></div>
                 </article>
               </Reveal>
             ))}
@@ -56,7 +56,7 @@ export default function About() {
 
       <section className="px-5 py-24 md:px-10 md:py-36">
         <div className="mx-auto max-w-[1400px]">
-          <Reveal><p className="mono mb-14 text-[hsl(var(--secondary))]">03 / A way of working</p></Reveal>
+          <Reveal><p className="mono mb-14 text-[hsl(var(--accent))]">03 / A way of working</p></Reveal>
           <div className="grid border-t border-[hsl(var(--foreground)/.2)] md:grid-cols-3">
             {[
               ['01', 'Start with listening', 'Every project begins with the specifics: the light, the neighborhood, the people who will wake up there.'],

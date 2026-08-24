@@ -8,6 +8,7 @@ import logoFull from '@/images/logo-full.png';
 const navItems = [
   { href: '/', label: 'Home' },
   { href: '/about', label: 'Our Portfolio' },
+  { label: "Meet the Team", href: "/team" },
   { href: '/contact', label: 'Contact' },
 ];
 
@@ -70,16 +71,15 @@ export function Shell({ children }: { children: React.ReactNode }) {
         }`}
       >
         <div className="flex items-center justify-between">
-          <Link href="/" onClick={handleNavClick} className="group flex items-center gap-3" data-testid="link-logo">
-            <span className="flex h-11 w-11 items-center justify-center">
-              <img 
-                src={logoIcon} 
-                alt="BricksTrade logo" 
-                className="h-full w-full object-contain transition-transform duration-500 group-hover:rotate-[8deg]" 
-              />
-            </span>
-            <span className="hidden text-[11px] font-semibold uppercase tracking-[.26em] text-[hsl(var(--foreground))] sm:block">Brickstrade<br /><span className="text-[hsl(var(--muted-foreground))]">Property Developer</span></span>
-          </Link>
+  <Link href="/" onClick={handleNavClick} className="group flex items-center gap-3" data-testid="link-logo">
+    <span className="flex h-16 w-16 items-center justify-center md:h-20 md:w-20">
+      <img 
+        src={logoIcon} 
+        alt="BricksTrade logo" 
+        className="h-full w-full object-contain transition-transform duration-500 group-hover:rotate-[8deg]" 
+      />
+    </span>
+  </Link>
           
           <div className="hidden items-center gap-9 md:flex">
             {navItems.map((item) => (
@@ -174,10 +174,10 @@ function Footer() {
             </div>
           </div>
           <div>
-            <p className="mono mb-5 opacity-50">Find us</p>
-            <p className="max-w-[190px] text-sm leading-6 opacity-80">Plot 18, 3rd Avenue<br />Gwarinpa, Abuja, Nigeria</p>
-            <a href="mailto:hello@brickstrade.studio" className="line-link mt-4 inline-block text-sm opacity-80 hover:opacity-100" data-testid="link-footer-email">hello@brickstarde.studio</a>
-          </div>
+  <p className="mono mb-5 opacity-50">Find us</p>
+  <p className="max-w-[190px] text-sm leading-6 opacity-80">1st Avenue, Suite B3<br />Irama Plaza, Gwarinpa, Abuja</p>
+  <a href="mailto:hello@brickstrade.studio" className="line-link mt-4 inline-block text-sm opacity-80 hover:opacity-100" data-testid="link-footer-email">hello@brickstrade.studio</a>
+</div>
         </div>
         <div className="mt-16 flex flex-col justify-between gap-4 border-t border-[hsl(var(--primary-foreground)/.18)] pt-5 text-[10px] uppercase tracking-[.12em] opacity-50 md:flex-row">
           <span>© 2026 TheAbdurrahaman </span><span>BricksTrade Property Developer</span><span>Built for the long view</span>
