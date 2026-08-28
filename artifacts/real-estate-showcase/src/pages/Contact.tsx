@@ -48,7 +48,7 @@ export default function Contact() {
               </div>
               
               <div>
-                <p className="mono mb-4 text-[hsl(var(--muted-foreground))]">Chat on WhatsApp</p>
+                <p className="mono mb-4 text-[hsl(var(--muted-foreground))]">Chat on WhatsApps</p>
                 <a
                   href="https://wa.me/2349061189188"
                   target="_blank"
