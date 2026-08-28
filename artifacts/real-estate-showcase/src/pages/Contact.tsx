@@ -11,7 +11,6 @@ export default function Contact() {
   const submit = (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault();
     
-    // Pulling the keys securely from your .env file
     const serviceId = import.meta.env.VITE_EMAILJS_SERVICE_ID;
     const templateId = import.meta.env.VITE_EMAILJS_TEMPLATE_ID;
     const publicKey = import.meta.env.VITE_EMAILJS_PUBLIC_KEY;
@@ -21,7 +20,6 @@ export default function Contact() {
     })
     .then(() => {
       setSent(true);
-      // Optional: Clear the form after sending by resetting the event target
       (event.target as HTMLFormElement).reset();
     })
     .catch((error) => {
@@ -41,25 +39,25 @@ export default function Contact() {
             <div className="space-y-10">
               <div>
                 <p className="mono mb-4 text-[hsl(var(--muted-foreground))]">General enquiries</p>
-                <a href="mailto:hello@aperture.studio" className="line-link text-xl" data-testid="link-email">hello@aperture.studio</a>
+                <a href="mailto:brickstrade.ng@gmail.com" className="line-link text-xl" data-testid="link-email">brickstrade.ng@gmail.com</a>
               </div>
               
               <div>
                 <p className="mono mb-4 text-[hsl(var(--muted-foreground))]">Talk to a human</p>
-                <a href="tel:+2348035550184" className="line-link text-xl" data-testid="link-phone">+234 803 555 0184</a>
+                <a href="tel:+2349061189188" className="line-link text-xl" data-testid="link-phone">+234 906 118 9188</a>
               </div>
               
               <div>
                 <p className="mono mb-4 text-[hsl(var(--muted-foreground))]">Chat on WhatsApp</p>
                 <a
-                  href="https://wa.me/2348035550184"
+                  href="https://wa.me/2349061189188"
                   target="_blank"
                   rel="noreferrer"
                   className="line-link flex items-center gap-2 text-xl"
                   data-testid="link-whatsapp"
                 >
                   <SiWhatsapp size={17} className="text-[hsl(var(--accent-orange))]" />
-                  +234 803 555 0184
+                  +234 906 118 9188
                 </a>
               </div>
               
@@ -92,7 +90,7 @@ export default function Contact() {
                 {!sent ? (
                   <motion.form key="form" initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0, y: -10 }} onSubmit={submit} className="space-y-8" data-testid="form-contact">
                     <label className="block"><span className="mono mb-3 block text-[hsl(var(--muted-foreground))]">Your name</span><input required name="name" placeholder="Name" className="w-full border-b border-[hsl(var(--foreground)/.3)] bg-transparent py-3 text-xl outline-none transition-colors placeholder:text-[hsl(var(--muted-foreground))] focus:border-[hsl(var(--accent-orange))]" data-testid="input-name" /></label>
-                    <label className="block"><span className="mono mb-3 block text-[hsl(var(--muted-foreground))]">Phone number</span><input required type="tel" name="phone" placeholder="+234 803 555 0184" className="w-full border-b border-[hsl(var(--foreground)/.3)] bg-transparent py-3 text-xl outline-none transition-colors placeholder:text-[hsl(var(--muted-foreground))] focus:border-[hsl(var(--accent-orange))]" data-testid="input-phone" /></label>
+                    <label className="block"><span className="mono mb-3 block text-[hsl(var(--muted-foreground))]">Phone number</span><input required type="tel" name="phone" placeholder="+234 906 118 9188" className="w-full border-b border-[hsl(var(--foreground)/.3)] bg-transparent py-3 text-xl outline-none transition-colors placeholder:text-[hsl(var(--muted-foreground))] focus:border-[hsl(var(--accent-orange))]" data-testid="input-phone" /></label>
                     <label className="block"><span className="mono mb-3 block text-[hsl(var(--muted-foreground))]">A few words</span><textarea required name="message" rows={4} placeholder="What are you thinking about?" className="w-full resize-none border-b border-[hsl(var(--foreground)/.3)] bg-transparent py-3 text-xl outline-none transition-colors placeholder:text-[hsl(var(--muted-foreground))] focus:border-[hsl(var(--accent-orange))]" data-testid="input-message" /></label>
                     <button type="submit" className="group mt-3 flex items-center gap-4 bg-[hsl(var(--primary))] px-6 py-4 text-xs uppercase tracking-[.16em] text-[hsl(var(--primary-foreground))] transition-colors hover:bg-[hsl(var(--accent-orange))]" data-testid="button-submit-contact">Send enquiry <Send size={15} className="transition-transform group-hover:translate-x-1" /></button>
                   </motion.form>
