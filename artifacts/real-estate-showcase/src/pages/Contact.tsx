@@ -38,12 +38,12 @@ export default function Contact() {
             <div className="space-y-10">
               <div>
                 <p className="mono mb-4 text-[hsl(var(--muted-foreground))]">General enquiries</p>
-                <a href="mailto:hello@aperture.studio" className="line-link text-xl" data-testid="link-email">hello@aperture.studio</a>
+                <a href="mailto:brickstrade.ng@gmail.com" className="line-link text-xl" data-testid="link-email">brickstrade.ng@gmail.com</a>
               </div>
               
               <div>
                 <p className="mono mb-4 text-[hsl(var(--muted-foreground))]">Talk to a human</p>
-                <a href="tel:+2348035550184" className="line-link text-xl" data-testid="link-phone">+234 803 555 0184</a>
+                <a href="tel:+239061189188" className="line-link text-xl" data-testid="link-phone">+234 906 118 9188</a>
               </div>
               
               <div>
