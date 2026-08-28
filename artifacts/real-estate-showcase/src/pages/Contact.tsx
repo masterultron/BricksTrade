@@ -11,15 +11,18 @@ export default function Contact() {
   const submit = (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault();
     
-    const serviceId = 'service_af1vo0e';
-    const templateId = 'template_zq2eb4r';
-    const publicKey = 'YOUR_PUBLIC_KEY'; // <-- Paste your actual Public Key here
+    // Pulling the keys securely from your .env file
+    const serviceId = import.meta.env.VITE_EMAILJS_SERVICE_ID;
+    const templateId = import.meta.env.VITE_EMAILJS_TEMPLATE_ID;
+    const publicKey = import.meta.env.VITE_EMAILJS_PUBLIC_KEY;
 
     emailjs.sendForm(serviceId, templateId, event.currentTarget, {
       publicKey: publicKey,
     })
     .then(() => {
       setSent(true);
+      // Optional: Clear the form after sending by resetting the event target
+      (event.target as HTMLFormElement).reset();
     })
     .catch((error) => {
       console.error('Failed to send:', error);
@@ -38,25 +41,25 @@ export default function Contact() {
             <div className="space-y-10">
               <div>
                 <p className="mono mb-4 text-[hsl(var(--muted-foreground))]">General enquiries</p>
-                <a href="mailto:brickstrade.ng@gmail.com" className="line-link text-xl" data-testid="link-email">brickstrade.ng@gmail.com</a>
+                <a href="mailto:hello@aperture.studio" className="line-link text-xl" data-testid="link-email">hello@aperture.studio</a>
               </div>
               
               <div>
                 <p className="mono mb-4 text-[hsl(var(--muted-foreground))]">Talk to a human</p>
-                <a href="tel:+239061189188" className="line-link text-xl" data-testid="link-phone">+234 906 118 9188</a>
+                <a href="tel:+2348035550184" className="line-link text-xl" data-testid="link-phone">+234 803 555 0184</a>
               </div>
               
               <div>
                 <p className="mono mb-4 text-[hsl(var(--muted-foreground))]">Chat on WhatsApp</p>
                 <a
-                  href="https://wa.me/2349061189188"
+                  href="https://wa.me/2348035550184"
                   target="_blank"
                   rel="noreferrer"
                   className="line-link flex items-center gap-2 text-xl"
                   data-testid="link-whatsapp"
                 >
                   <SiWhatsapp size={17} className="text-[hsl(var(--accent-orange))]" />
-                  +234 906 118 9188
+                  +234 803 555 0184
                 </a>
               </div>
               
