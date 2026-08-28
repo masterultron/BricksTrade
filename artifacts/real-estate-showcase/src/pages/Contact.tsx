@@ -3,20 +3,28 @@ import { AnimatePresence, motion } from 'framer-motion';
 import { ArrowUpRight, Check, Linkedin, MapPin, Phone, Send } from 'lucide-react';
 import { SiFacebook, SiInstagram, SiTiktok } from 'react-icons/si';
 import { SiWhatsapp } from 'react-icons/si';
+import emailjs from '@emailjs/browser';
 
 export default function Contact() {
   const [sent, setSent] = useState(false);
   
   const submit = (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault();
-    const form = new FormData(event.currentTarget);
-    const name = String(form.get('name') ?? '');
-    const phone = String(form.get('phone') ?? '');
-    const message = String(form.get('message') ?? '');
-    const subject = encodeURIComponent(`New enquiry from ${name}`);
-    const body = encodeURIComponent(`Name: ${name}\nPhone: ${phone}\n\n${message}`);
-    window.location.href = `mailto:hello@aperture.studio?subject=${subject}&body=${body}`;
-    setSent(true);
+    
+    const serviceId = 'service_af1vo0e';
+    const templateId = 'template_zq2eb4r';
+    const publicKey = 'YOUR_PUBLIC_KEY'; // <-- Paste your actual Public Key here
+
+    emailjs.sendForm(serviceId, templateId, event.currentTarget, {
+      publicKey: publicKey,
+    })
+    .then(() => {
+      setSent(true);
+    })
+    .catch((error) => {
+      console.error('Failed to send:', error);
+      alert('Something went wrong. Please try again.');
+    });
   };
 
   return (
