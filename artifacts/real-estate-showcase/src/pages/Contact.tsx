@@ -49,14 +49,14 @@ export default function Contact() {
               <div>
                 <p className="mono mb-4 text-[hsl(var(--muted-foreground))]">Chat on WhatsApp</p>
                 <a
-                  href="https://wa.me/2348035550184"
+                  href="https://wa.me/2349061189188"
                   target="_blank"
                   rel="noreferrer"
                   className="line-link flex items-center gap-2 text-xl"
                   data-testid="link-whatsapp"
                 >
                   <SiWhatsapp size={17} className="text-[hsl(var(--accent-orange))]" />
-                  +234 803 555 0184
+                  +234 906 118 9188
                 </a>
               </div>
               
