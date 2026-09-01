@@ -19,7 +19,7 @@ const team: TeamMember[] = [
   {
     name: "Team Member",
     role: "Principal Partner",
-    image: "bash",
+    image: bash,
   },
   // {
   //   name: "Team Member",
