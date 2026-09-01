@@ -3,6 +3,8 @@ import { Reveal } from '@/components/Shell';
 import logoOnly from '@/images/logo-only.png'
 import dami from '@/images/dami.jpg';
 import dami2 from '@/images/dami2.jpg';
+import bash from '@/images/bash.jpg';
+
 
 
 
@@ -17,7 +19,7 @@ const team: TeamMember[] = [
   {
     name: "Team Member",
     role: "Principal Partner",
-    image: "/images/bash.PNG",
+    image: "bash",
   },
   // {
   //   name: "Team Member",
