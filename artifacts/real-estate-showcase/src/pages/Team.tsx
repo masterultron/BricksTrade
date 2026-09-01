@@ -100,6 +100,7 @@ export default function Team() {
           <img
             src={member.image}
             alt={member.name}
+            loading="lazy"
             className="h-full w-full object-cover object-top"
           />
         </div>
