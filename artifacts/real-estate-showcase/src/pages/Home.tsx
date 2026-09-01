@@ -9,16 +9,26 @@ import jabiLakeviewTerraces from '@/images/jabi-lakeview-terraces.jpeg';
 import sunCity from '@/images/suncity1.jpeg';
 import sunCity2 from '@/images/suncity2.jpeg';
 import sunCity3 from '@/images/suncity3.jpeg';
+import karasana from '@/images/karsana.jpg'
+import idu from '@/images/idu.jpg'
+
 
 
 
 const projects = [
   { name: 'Gwarinpa Heights', place: 'Gwarinpa, Abuja', year: '2024', image: gwarinpaHeights },
-  { name: 'Guzape Court', place: 'Guzape, Abuja', year: '2023', image: guzapeCourt },
-  { name: 'Jabi Lakeview Terraces', place: 'Jabi, Abuja', year: '2022', image: jabiLakeviewTerraces },
-  { name: 'Sun City', place: 'Sun City Estate, Abuja', year: '2025', image: sunCity },
-  { name: 'Sun City', place: 'Sun City Estate, Abuja', year: '2025', image: sunCity2 },
-  { name: 'Sun City', place: 'Sun City Estate, Abuja', year: '2025', image: sunCity3 },
+  // { name: 'Guzape Court', place: 'Guzape, Abuja', year: '2023', image: guzapeCourt },
+  // { name: 'Jabi Lakeview Terraces', place: 'Jabi, Abuja', year: '2022', image: jabiLakeviewTerraces },
+  { name: 'Ventures Scape Estate', place: 'Jabi, Abuja', year: '2025', image: jabiLakeviewTerraces },
+  { name: 'Stallion Park', place: 'Idu Sabo, Abuja', year: '2025', image: idu },
+
+  // { name: 'Jabi Lakeview Terraces', place: 'Jabi, Abuja', year: '2022', image: jabiLakeviewTerraces },
+
+
+  // { name: 'Sun City', place: 'Sun City Estate, Abuja', year: '2025', image: sunCity },
+  // { name: 'Sun City', place: 'Sun City Estate, Abuja', year: '2025', image: sunCity2 },
+  // { name: 'Sun City', place: 'Sun City Estate, Abuja', year: '2025', image: sunCity3 },
+
 
 ];
 export default function Home() {

@@ -176,11 +176,11 @@ function Footer() {
           <div>
   <p className="mono mb-5 opacity-50">Find us</p>
   <p className="max-w-[190px] text-sm leading-6 opacity-80">1st Avenue, Suite B3<br />Irama Plaza, Gwarinpa, Abuja</p>
-  <a href="mailto:hello@brickstrade.studio" className="line-link mt-4 inline-block text-sm opacity-80 hover:opacity-100" data-testid="link-footer-email">hello@brickstrade.studio</a>
+  <a href="mailto:brickstrade.ng@gmail.com" className="line-link mt-4 inline-block text-sm opacity-80 hover:opacity-100" data-testid="link-footer-email">brickstrade.ng@gmail.com</a>
 </div>
         </div>
         <div className="mt-16 flex flex-col justify-between gap-4 border-t border-[hsl(var(--primary-foreground)/.18)] pt-5 text-[10px] uppercase tracking-[.12em] opacity-50 md:flex-row">
-          <span>© 2026 TheAbdurrahaman </span><span>BricksTrade Property Developer</span><span>Built for the long view</span>
+          <span>© 2025 TheAbdurrahaman </span><span>BricksTrade Property Developer</span><span>Built for the long view</span>
         </div>
       </div>
     </footer>

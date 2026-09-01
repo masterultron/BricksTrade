@@ -8,19 +8,25 @@ import jabiLakeviewTerraces from '@/images/jabi-lakeview-terraces.jpeg';
 import gamesVillage from '@/images/gamesvillage1.jpeg';
 import gamesVillage2 from '@/images/gamesvillage2.jpeg';
 import gamesVillage3 from '@/images/gamesvillage3.jpeg';
-
+import idu from '@/images/idu.jpg'
 import sunCity from '@/images/suncity2.jpeg';
+import karasana from '@/images/karsana.jpg'
+
 
 
 
 const portfolio = [
   { title: 'Gwarinpa Heights', type: 'Terrace residences', place: 'Gwarinpa, Abuja', image: gwarinpaHeights, size: 'large' },
-  { title: 'Guzape Court', type: 'Urban residences', place: 'Guzape, Abuja', image: guzapeCourt, size: 'small' },
-  { title: 'Jabi Lakeview Terraces', type: 'Terrace residences', place: 'Jabi, Abuja', image: jabiLakeviewTerraces, size: 'small' },
-  { title: 'Games Village', type: '15-unit apartment complex. 150k per night for 2 bed room', place: 'Games Village, Abuja', image: gamesVillage, size: 'large' },
-  { title: 'Sun City', type: '4 bedroom terrace duplex', place: 'Sun City, Abuja', image: sunCity, size: 'small' },
-  { title: 'Games Village', type: '15-unit apartment complex. 150k per night for 2 bed room', place: 'Games Village', image: gamesVillage2, size: 'large' },
-  { title: 'Games Village', type: '15-unit apartment complex. 150k per night for 2 bed room', place: 'Games Village', image: gamesVillage3, size: 'small' },
+   { title: 'Stallion Park', type: '3 bedroom terrace duplex', place: 'Idu Sabo', image: idu, size: 'small' },
+  // { title: 'Jabi Lakeview Terraces', type: 'Terrace residences', place: 'Jabi, Abuja', image: jabiLakeviewTerraces, size: 'large' },
+  { title: 'Games Village', type: '15-unit apartment complex. 150k per night for 2 bed room', place: 'Games Village, Abuja', image: gamesVillage, size: 'small' },
+  // { title: 'Sun City', type: '4 bedroom terrace duplex', place: 'Sun City, Abuja', image: sunCity, size: 'small' },
+  { title: 'Games Village Court', type: '15-unit apartment complex. 150k per night for 2 bed room', place: 'Games Village', image: gamesVillage2, size: 'large' },
+  // { title: 'Stallion Park', type: '3 bedroom terrace duplex', place: 'Idu Sabo', image: idu, size: 'large' },
+  // { title: 'Games Village', type: '15-unit apartment complex. 150k per night for 2 bed room', place: 'Games Village', image: gamesVillage3, size: 'small' },
+  { title: 'Ventures Scape Estate ', type: '4 bedroom terrace duplex karsana', place: 'Karasana', image: karasana, size: 'small' },
+
+
 
 
 ];

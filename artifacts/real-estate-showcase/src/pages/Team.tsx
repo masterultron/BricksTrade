@@ -4,6 +4,8 @@ import logoOnly from '@/images/logo-only.png'
 import dami from '@/images/dami.jpg';
 import dami2 from '@/images/dami2.jpg';
 import bash from '@/images/bash.jpg';
+import mok from '@/images/mok.jpg';
+
 
 
 
@@ -16,6 +18,12 @@ interface TeamMember {
 }
 
 const team: TeamMember[] = [
+
+  {
+    name: "Okunlola Muyideen",
+    role: "CEO",
+    image: mok,
+  },
   {
     name: "Team Member",
     role: "Principal Partner",
@@ -27,16 +35,17 @@ const team: TeamMember[] = [
   //   image: "/images/hakeem-sheu.jpg",
   // },
 
+
   {
-    name: "Team Member",
-    role: "Associate",
-    image: dami2,
+    name: "Usikalu Damilola",
+    role: "Executive director",
+    image: dami,
   },
 
   {
-    name: "Team Member",
-    role: "Associate",
-    image: dami,
+    name: "Adeitan Damilola ",
+    role: "Managing director",
+    image: dami2,
   },
   
 ];
