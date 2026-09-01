@@ -17,7 +17,7 @@ const team: TeamMember[] = [
   {
     name: "Team Member",
     role: "Principal Partner",
-    image: "/images/muhydeen-okunlola.jpg",
+    image: "/images/bash.PNG",
   },
   // {
   //   name: "Team Member",
@@ -52,12 +52,12 @@ export default function Team() {
         />
         <div className="relative z-10 max-w-2xl px-6 text-center">
           <Reveal>
-            <p className="font-mono text-xs tracking-[0.2em] uppercase text-gold mb-4">
+            <p className="mono text-xs tracking-[0.2em] uppercase text-[hsl(var(--accent))] mb-4">
               BricksTrade / The People
             </p>
           </Reveal>
           <Reveal delay={0.1}>
-            <h1 className="font-display text-4xl md:text-6xl text-white leading-tight">
+            <h1 className="display text-4xl md:text-6xl text-white leading-tight">
               The people
               <br />
               behind the plan.
@@ -76,7 +76,7 @@ export default function Team() {
       <section className="py-24 px-6 md:px-12">
         <div className="max-w-6xl mx-auto">
           <Reveal>
-            <p className="font-mono text-xs tracking-[0.2em] uppercase text-gold mb-12">
+            <p className="mono text-xs tracking-[0.2em] uppercase text-[hsl(var(--accent))] mb-12">
               01 / Meet the team
             </p>
           </Reveal>
@@ -92,10 +92,10 @@ export default function Team() {
             className="h-full w-full object-cover object-top"
           />
         </div>
-        <h3 className="font-display text-3xl md:text-4xl mt-6">
+        <h3 className="display text-3xl md:text-4xl mt-6">
           {member.name}
         </h3>
-        <p className="font-mono text-sm text-muted-foreground mt-1">
+        <p className="mono text-sm text-muted-foreground mt-1">
           {member.role}
         </p>
       </div>

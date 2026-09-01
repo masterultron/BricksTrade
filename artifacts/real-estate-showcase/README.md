@@ -1,16 +1,19 @@
-# BricksTrade Property Studio
+# BricksTrade Property Developer
 
-A premium real-estate brochure website designed to present architectural work as an editorial, cinematic experience. The site is intentionally asset-ready: the current photography, copy, contact details, and social destinations are placeholders that can be replaced when the client materials arrive.
+A premium real-estate brochure website for BricksTrade, presenting the company's developments across Abuja as an editorial, cinematic experience — paired with a "Meet the Team" page and a working contact form.
 
 ## What is included
 
 - Full-screen project slideshow on the home page with crossfade transitions, pause/play controls, and slide navigation
-- Shared responsive navigation with a mobile menu and a branded footer
-- Studio/about page with a parallax-style hero, animated story content, principles, and portfolio projects
-- Contact page with phone, email, social links, lead form, and a clickable Google Maps location block
+- Smart-scroll navigation: the navbar hides on scroll-down, reappears on scroll-up, and gains a blurred backdrop once scrolled; nav links automatically scroll the page to top on click and close the mobile menu
+- Shared responsive navigation with a mobile menu and a branded footer, using the official BricksTrade logo (icon mark in the navbar, full lockup with tagline in the footer)
+- Studio/about page with a parallax-style hero, animated story content, principles, and a real portfolio of current developments
+- "Meet the Team" page introducing the partners and associates behind BricksTrade
+- Contact page with phone, WhatsApp, email, social links, a working lead form (see Email delivery below), and a clickable Google Maps location block
 - Scroll reveal, staggered entrance, hover, and page transition motion built with Framer Motion
 - Reduced-motion support for visitors who prefer less animation
 - Responsive layouts for desktop, tablet, and mobile screens
+- Brand color system built from BricksTrade's official brand guidelines (deep navy, orange, and gold), with green retained as a minor accent on select emphasis text
 
 ## Tech stack
 
@@ -20,17 +23,17 @@ A premium real-estate brochure website designed to present architectural work as
 - Tailwind CSS
 - Framer Motion
 - Wouter for client-side routing
-- Lucide React for interface icons
+- Lucide React + react-icons for interface and social icons
+- EmailJS for contact form delivery
 - pnpm workspace tooling
-
-> The Replit workspace uses the React + Vite artifact template. The requested brochure routes are implemented as `/`, `/about`, and `/contact`, which provide the same user-facing routing shape as the original App Router brief.
 
 ## Routes
 
 | Route | Purpose |
 | --- | --- |
 | `/` | Cinematic home page and featured project slideshow |
-| `/about` | Studio story, mission, journey, and portfolio |
+| `/about` | Company story, mission, principles, and portfolio |
+| `/team` | Meet the partners and associates behind BricksTrade |
 | `/contact` | Contact details, enquiry form, social links, and office location |
 
 ## Folder structure
@@ -45,6 +48,14 @@ artifacts/real-estate-showcase/
     ├── App.tsx
     ├── index.css
     ├── main.tsx
+    ├── images/
+    │   ├── logo-icon.png
+    │   ├── logo-full.png
+    │   ├── logo-only.png
+    │   ├── gwarinpa-heights.jpeg
+    │   ├── guzape-court.jpeg
+    │   ├── jabi-lakeview-terraces.jpeg
+    │   └── ... team photos
     ├── components/
     │   ├── Shell.tsx
     │   ├── error-boundary.tsx
@@ -53,20 +64,42 @@ artifacts/real-estate-showcase/
     └── pages/
         ├── Home.tsx
         ├── About.tsx
+        ├── Team.tsx
         ├── Contact.tsx
         └── not-found.tsx
 ```
 
+## Email delivery (EmailJS)
+
+The contact form sends directly to a live inbox via EmailJS — no backend server required. This needs three environment variables set locally and in your deployment provider (e.g. Netlify):
+
+```bash
+VITE_EMAILJS_SERVICE_ID=service_xxxxxxx
+VITE_EMAILJS_TEMPLATE_ID=template_xxxxxxx
+VITE_EMAILJS_PUBLIC_KEY=your_public_key
+```
+
+Add these to a local `.env` file in `artifacts/real-estate-showcase/` for development, and add the same three keys under your hosting provider's environment variables for production. The EmailJS template should read the `name`, `phone`, and `message` fields submitted by the form.
+
+## Brand colors
+
+Sourced from the official BricksTrade brand guidelines:
+
+| Role | Color | Hex |
+| --- | --- | --- |
+| Primary (navy) | Deep Navy | `#001F3D` |
+| Accent (gold) | Warm Gold | `#C28021` |
+| Accent (orange) | Orange | `#F18320` |
+| Secondary | Green (minor accent only) | — |
+
 ## Replacing placeholder content
 
-The current build uses fictional BricksTrade Property Developer branding and placeholder architectural photography for presentation. Before client delivery:
+A few items still need real content before final client delivery:
 
-1. Replace the studio name and logo treatment in `src/components/Shell.tsx`.
-2. Replace project names, locations, years, descriptions, and image URLs in `src/pages/Home.tsx` and `src/pages/About.tsx`.
-3. Replace the email address, phone number, social destinations, and office address in `src/pages/Contact.tsx`.
-4. Update the Google Maps query in `src/pages/Contact.tsx` to the final office location.
-5. Replace the `mailto:` destination in the contact form with the client's preferred Formspree, EmailJS, or backend endpoint when a production submission service is available.
-6. Review `src/index.css` for any final brand font, color, or spacing adjustments.
+1. Replace placeholder team member names ("Team Member") in `src/pages/Team.tsx` with real names and roles.
+2. Confirm final photography for all three current developments (Gwarinpa Heights, Guzape Court, Jabi Lakeview Terraces) in `src/pages/Home.tsx` and `src/pages/About.tsx`.
+3. Confirm final social media destinations (Instagram, Facebook, TikTok, LinkedIn) in `src/pages/Contact.tsx` — currently placeholder URLs.
+4. Review `src/index.css` for any final brand font or spacing adjustments.
 
 ## Download from Replit and open in VS Code
 
@@ -77,23 +110,30 @@ The current build uses fictional BricksTrade Property Developer branding and pla
 5. Open the integrated terminal in VS Code.
 6. Install the workspace dependencies:
 
-   ```bash
+```bash
    pnpm install
-   ```
+```
 
    If pnpm is not installed, install it with:
 
-   ```bash
+```bash
    npm install --global pnpm
-   ```
+```
 
-7. Start the local development server:
+7. Create a `.env` file in `artifacts/real-estate-showcase/` with the EmailJS keys listed above, plus:
 
-   ```bash
-   pnpm --filter @workspace/real-estate-showcase run dev
-   ```
+```bash
+   PORT=3000
+   BASE_PATH=/
+```
 
-8. Open the local URL printed by Vite in your browser.
+8. Start the local development server:
+
+```bash
+   PORT=3000 BASE_PATH=/ pnpm --filter @workspace/real-estate-showcase run dev
+```
+
+9. Open the local URL printed by Vite in your browser.
 
 ## Useful commands
 
@@ -102,9 +142,9 @@ The current build uses fictional BricksTrade Property Developer branding and pla
 pnpm --filter @workspace/real-estate-showcase run typecheck
 
 # Build the production bundle
-pnpm --filter @workspace/real-estate-showcase run build
+PORT=3000 BASE_PATH=/ pnpm --filter @workspace/real-estate-showcase run build
 ```
 
 ## Contact form note
 
-The demo form validates the three requested fields and presents an intentional success state for client review. It is ready to be connected to a production email service; replace the submission handler in `src/pages/Contact.tsx` with the final Formspree, EmailJS, or API endpoint once the client supplies the destination and credentials.
+The form is fully wired to EmailJS and sends real enquiries to the connected inbox on submit — no further backend work needed, as long as the three environment variables above are set correctly in both local and production environments.
