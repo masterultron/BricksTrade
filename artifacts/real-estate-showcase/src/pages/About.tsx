@@ -5,12 +5,24 @@ import { Reveal } from '@/components/Shell';
 import gwarinpaHeights from '@/images/gwarinpa-heights.jpeg';
 import guzapeCourt from '@/images/guzape-court.jpeg';
 import jabiLakeviewTerraces from '@/images/jabi-lakeview-terraces.jpeg';
+import gamesVillage from '@/images/gamesvillage1.jpeg';
+import gamesVillage2 from '@/images/gamesvillage2.jpeg';
+import gamesVillage3 from '@/images/gamesvillage3.jpeg';
+
+import sunCity from '@/images/suncity2.jpeg';
+
 
 
 const portfolio = [
   { title: 'Gwarinpa Heights', type: 'Terrace residences', place: 'Gwarinpa, Abuja', image: gwarinpaHeights, size: 'large' },
   { title: 'Guzape Court', type: 'Urban residences', place: 'Guzape, Abuja', image: guzapeCourt, size: 'small' },
   { title: 'Jabi Lakeview Terraces', type: 'Terrace residences', place: 'Jabi, Abuja', image: jabiLakeviewTerraces, size: 'small' },
+  { title: 'Games Village', type: '15-unit apartment complex', place: 'Games Village, Abuja', image: gamesVillage, size: 'large' },
+  { title: 'Sun City', type: '4 bedroom terrace duplex', place: 'Sun City, Abuja', image: sunCity, size: 'small' },
+  { title: 'Games Village', type: '15-unit apartment complex', place: 'Games Village', image: gamesVillage2, size: 'large' },
+  { title: 'Games Village', type: '15-unit apartment complex', place: 'Games Village', image: gamesVillage3, size: 'small' },
+
+
 ];
 
 export default function About() {

@@ -6,12 +6,20 @@ import { Reveal } from '@/components/Shell';
 import gwarinpaHeights from '@/images/gwarinpa-heights.jpeg';
 import guzapeCourt from '@/images/guzape-court.jpeg';
 import jabiLakeviewTerraces from '@/images/jabi-lakeview-terraces.jpeg';
+import sunCity from '@/images/suncity1.jpeg';
+import sunCity2 from '@/images/suncity2.jpeg';
+import sunCity3 from '@/images/suncity3.jpeg';
+
 
 
 const projects = [
   { name: 'Gwarinpa Heights', place: 'Gwarinpa, Abuja', year: '2024', image: gwarinpaHeights },
   { name: 'Guzape Court', place: 'Guzape, Abuja', year: '2023', image: guzapeCourt },
   { name: 'Jabi Lakeview Terraces', place: 'Jabi, Abuja', year: '2022', image: jabiLakeviewTerraces },
+  { name: 'Sun City', place: 'Sun City Estate, Abuja', year: '2025', image: sunCity },
+  { name: 'Sun City', place: 'Sun City Estate, Abuja', year: '2025', image: sunCity2 },
+  { name: 'Sun City', place: 'Sun City Estate, Abuja', year: '2025', image: sunCity3 },
+
 ];
 export default function Home() {
   const [active, setActive] = useState(0);
@@ -54,7 +62,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div className="absolute right-5 top-1/2 hidden -translate-y-1/2 md:block"><span className="vertical-label mono opacity-50">BricksTrade / 01 — 03</span></div>
+        <div className="absolute right-5 top-1/2 hidden -translate-y-1/2 md:block"><span className="vertical-label mono opacity-50">BricksTrade / 01 — 04</span></div>
       </section>
 
       <section id="intro" className="px-5 py-24 md:px-10 md:py-40">
@@ -72,7 +80,7 @@ export default function Home() {
         <div className="mx-auto max-w-[1400px]">
           <div className="mb-12 flex items-end justify-between"><p className="mono text-[hsl(var(--accent))]">02 / In focus</p><span className="mono opacity-60">Selected work / 2011—25</span></div>
           <div className="grid gap-8 md:grid-cols-[1.35fr_.65fr] md:items-end">
-            <Reveal><div className="group overflow-hidden"><img src={gwarinpaHeights} alt="Gwarinpa Heights exterior" className="image-lift aspect-[1.25/1] w-full object-cover" /><div className="mt-5 flex items-start justify-between"><div><h3 className="display text-4xl">Gwarinpa Heights</h3><p className="mt-1 text-sm opacity-60">Gwarinpa, Abuja, Nigeria</p></div><span className="mono text-[hsl(var(--accent))]">01—03</span></div></div></Reveal>
+            <Reveal><div className="group overflow-hidden"><img src={gwarinpaHeights} alt="Gwarinpa Heights exterior" className="image-lift aspect-[1.25/1] w-full object-cover" /><div className="mt-5 flex items-start justify-between"><div><h3 className="display text-4xl">Gwarinpa Heights</h3><p className="mt-1 text-sm opacity-60">Gwarinpa, Abuja, Nigeria</p></div><span className="mono text-[hsl(var(--accent))]">01—04</span></div></div></Reveal>
             <Reveal delay={.12}><div className="md:pb-14"><p className="display max-w-xs text-4xl leading-[.98]">A room, a view, a life in balance.</p><p className="mt-6 max-w-xs text-sm leading-6 opacity-60">A terrace held close to its neighbors, finished in warm cream and quiet charcoal.</p><Link href="/about" className="group mt-10 inline-flex items-center gap-3 text-xs uppercase tracking-[.15em] text-[hsl(var(--accent-orange))]" data-testid="link-view-projects">View selected projects <ArrowRight size={15} className="transition-transform group-hover:translate-x-1" /></Link></div></Reveal>
           </div>
         </div>
@@ -117,4 +125,4 @@ export default function Home() {
       </section>
     </div>
   );
-} 
+}
