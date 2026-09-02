@@ -11,6 +11,8 @@ import sunCity2 from '@/images/suncity2.jpeg';
 import sunCity3 from '@/images/suncity3.jpeg';
 import karasana from '@/images/karsana.jpg'
 import idu from '@/images/idu.jpg'
+import idu2 from '@/images/idu2.jpg'
+import idu3 from '@/images/idu3.jpg'
 import gamev1 from '@/images/gamesvillage1.jpeg'
 import gamwv2 from '@/images/gamesvillage2.jpeg'
 import gamev3 from '@/images/gamesvillage3.jpeg'
@@ -29,12 +31,14 @@ const projects = [
   // { name: 'Games Village Court', place: 'Games Village, Abuja', year: '2025', image: gamwv2 },
   { name: 'Stallion Park', place: 'Idu Sabo, Abuja', year: '2026', image: idu },
   { name: 'Games Village Height', place: 'Games Village, Abuja', year: '2025', image: gamev3 },
+  { name: 'Stallion Park', place: 'Idu Sabo, Abuja', year: '2026', image: idu2 },
 
   // { name: 'Jabi Lakeview Terraces', place: 'Jabi, Abuja', year: '2022', image: jabiLakeviewTerraces },
 
-
   // { name: 'Sun City', place: 'Sun City Estate, Abuja', year: '2025', image: sunCity },
   { name: 'Sun City Court', place: 'Sun City Estate, Abuja', year: '2024', image: sunCity2 },
+  { name: 'Stallion Park', place: 'Idu Sabo, Abuja', year: '2026', image: idu3 },
+
   // { name: 'Sun City', place: 'Sun City Estate, Abuja', year: '2025', image: sunCity3 },
 
 
