@@ -39,16 +39,16 @@ const team: TeamMember[] = [
   {
     name: "Usikalu Damilola",
     role: "Executive director",
-    image: dami,
+    image: dami2,
   },
 
   {
-    name: "Adeitan Damilola ",
+    name: "Adeitan Damilola",
     role: "Managing director",
-    image: dami2,
+    image: dami,
   },
   
-];
+]
 
 export default function Team() {
   return (
