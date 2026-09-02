@@ -27,8 +27,8 @@ const projects = [
   // { name: 'Stallion Park', place: 'Idu Sabo, Abuja', year: '2025', image: idu },
   { name: 'Games Village Court', place: 'Games Village, Abuja', year: '2025', image: gamev1 },
   { name: 'Games Village Court', place: 'Games Village, Abuja', year: '2025', image: gamwv2 },
-  { name: 'Games Village Court', place: 'Games Village, Abuja', year: '2025', image: gamev3 },
   { name: 'Stallion Park', place: 'Idu Sabo, Abuja', year: '2025', image: idu },
+  { name: 'Games Village Court', place: 'Games Village, Abuja', year: '2025', image: gamev3 },
 
   // { name: 'Jabi Lakeview Terraces', place: 'Jabi, Abuja', year: '2022', image: jabiLakeviewTerraces },
 
