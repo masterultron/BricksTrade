@@ -25,8 +25,8 @@ const team: TeamMember[] = [
     image: mok,
   },
   {
-    name: "Oyeleke Bashiru ",
-    role: "Creative Director / PM",
+    name: "CPM. Oyeleke Bashir",
+    role: "Project Manager",
     image: bash,
   },
   // {
