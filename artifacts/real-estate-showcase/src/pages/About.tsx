@@ -21,7 +21,7 @@ const portfolio = [
   // { title: 'Jabi Lakeview Terraces', type: 'Terrace residences', place: 'Jabi, Abuja', image: jabiLakeviewTerraces, size: 'large' },
   // { title: 'Games Village', type: '15-unit apartment complex. 150k per night for 2 bed room', place: 'Games Village, Abuja', image: gamesVillage, size: 'small' },
   { title: 'Sun City Court', type: '4 bedroom terrace duplex', place: 'Sun City, Abuja', image: sunCity, size: 'small' },
-  { title: 'Games Village Height', type: '15-unit apartment complex. 150k per night for 2 bed room', place: 'Games Village', image: gamesVillage2, size: 'large' },
+  { title: 'Games Village Height', type: '15-unit apartment complex.', place: 'Games Village', image: gamesVillage2, size: 'large' },
   // { title: 'Stallion Park', type: '3 bedroom terrace duplex', place: 'Idu Sabo', image: idu, size: 'large' },
   // { title: 'Games Village', type: '15-unit apartment complex. 150k per night for 2 bed room', place: 'Games Village', image: gamesVillage3, size: 'small' },
   { title: 'Ventures Scape Estate ', type: '4 bedroom terrace duplex karsana', place: 'Karasana', image: karasana, size: 'small' },
