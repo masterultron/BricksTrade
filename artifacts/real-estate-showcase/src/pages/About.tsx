@@ -16,8 +16,8 @@ import karasana from '@/images/karsana.jpg'
 
 
 const portfolio = [
-  { title: 'Gwarinpa Heights', type: 'Terrace residences', place: 'Gwarinpa, Abuja', image: gwarinpaHeights, size: 'large' },
-   { title: 'Stallion Park', type: '3 bedroom terrace duplex', place: 'Idu Sabo', image: idu, size: 'small' },
+  // { title: 'Gwarinpa Heights', type: 'Terrace residences', place: 'Gwarinpa, Abuja', image: gwarinpaHeights, size: 'large' },
+   { title: 'Stallion Park', type: '3 bedroom terrace duplex', place: 'Idu Sabo', image: idu, size: 'large' },
   // { title: 'Jabi Lakeview Terraces', type: 'Terrace residences', place: 'Jabi, Abuja', image: jabiLakeviewTerraces, size: 'large' },
   { title: 'Games Village', type: '15-unit apartment complex. 150k per night for 2 bed room', place: 'Games Village, Abuja', image: gamesVillage, size: 'small' },
   // { title: 'Sun City', type: '4 bedroom terrace duplex', place: 'Sun City, Abuja', image: sunCity, size: 'small' },
