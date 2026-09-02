@@ -23,7 +23,7 @@ const projects = [
   // { name: 'Gwarinpa Heights', place: 'Gwarinpa, Abuja', year: '2024', image: gwarinpaHeights },
   // { name: 'Guzape Court', place: 'Guzape, Abuja', year: '2023', image: guzapeCourt },
   // { name: 'Jabi Lakeview Terraces', place: 'Jabi, Abuja', year: '2022', image: jabiLakeviewTerraces },
-  { name: 'Ventures Scape Estate', place: 'Jabi, Abuja', year: '2025', image: jabiLakeviewTerraces },
+  { name: 'Ventures Scape Estate', place: 'Karasana, Abuja', year: '2025', image: jabiLakeviewTerraces },
   // { name: 'Stallion Park', place: 'Idu Sabo, Abuja', year: '2025', image: idu },
   { name: 'Games Village Court', place: 'Games Village, Abuja', year: '2025', image: gamev1 },
   { name: 'Games Village Court', place: 'Games Village, Abuja', year: '2025', image: gamwv2 },
