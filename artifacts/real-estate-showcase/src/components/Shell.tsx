@@ -175,7 +175,7 @@ function Footer() {
           </div>
           <div>
   <p className="mono mb-5 opacity-50">Find us</p>
-  <p className="max-w-[190px] text-sm leading-6 opacity-80">1st Avenue, Suite B3<br />Irama Plaza, Gwarinpa, Abuja</p>
+  <p className="max-w-[190px] text-sm leading-6 opacity-80">4th Avenue, Suite B3<br />Irama Plaza, Gwarinpa, Abuja</p>
   <a href="mailto:brickstrade.ng@gmail.com" className="line-link mt-4 inline-block text-sm opacity-80 hover:opacity-100" data-testid="link-footer-email">brickstrade.ng@gmail.com</a>
 </div>
         </div>

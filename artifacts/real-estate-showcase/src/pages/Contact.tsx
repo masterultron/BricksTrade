@@ -71,14 +71,14 @@ export default function Contact() {
                 </div>
               </div>
               
-              <a href="https://maps.google.com/?q=1st+Avenue+Suite+B3+Irama+Plaza+Gwarinpa+Abuja+Nigeria" target="_blank" rel="noreferrer" className="group block overflow-hidden border border-[hsl(var(--foreground)/.18)] bg-[hsl(var(--muted))]" data-testid="link-office-map">
+              <a href="https://maps.google.com/?q=4th+Avenue+Suite+B3+Irama+Plaza+Gwarinpa+Abuja+Nigeria" target="_blank" rel="noreferrer" className="group block overflow-hidden border border-[hsl(var(--foreground)/.18)] bg-[hsl(var(--muted))]" data-testid="link-office-map">
                 <div className="relative h-44 overflow-hidden bg-[#b3b7a7]">
                   <div className="absolute inset-0 opacity-40" style={{ backgroundImage: 'linear-gradient(30deg, transparent 48%, #6b766b 49%, #6b766b 51%, transparent 52%), linear-gradient(120deg, transparent 48%, #dfe0c9 49%, #dfe0c9 54%, transparent 55%)', backgroundSize: '80px 80px' }} />
                   <div className="absolute left-[56%] top-[44%] flex h-9 w-9 -translate-x-1/2 -translate-y-1/2 items-center justify-center rounded-full bg-[hsl(var(--accent-orange))] text-[hsl(var(--accent-orange-foreground))] shadow-lg"><MapPin size={17} /></div>
                   <span className="absolute bottom-3 left-4 mono bg-[hsl(var(--background)/.85)] px-2 py-1 text-[hsl(var(--foreground))]">Open in Google Maps ↗</span>
                 </div>
                 <div className="flex items-center justify-between p-4 text-sm">
-                  <span>1st Avenue, Suite B3<br />Irama Plaza, Gwarinpa, Abuja</span>
+                  <span>4th Avenue, Suite B3<br />Irama Plaza, Gwarinpa, Abuja</span>
                   <ArrowUpRight size={16} className="transition-transform group-hover:translate-x-1 group-hover:-translate-y-1" />
                 </div>
               </a>
