@@ -12,8 +12,8 @@ export default function Contact() {
     event.preventDefault();
     
     const serviceId = "service_az947ep";
-    const templateId = import.meta.env.VITE_EMAILJS_TEMPLATE_ID;
-    const publicKey = import.meta.env.VITE_EMAILJS_PUBLIC_KEY;
+    const templateId = "template_zq2eb4r";
+    const publicKey = "KbJB2EjfQNTiQ9oQa";
 
     emailjs.sendForm(serviceId, templateId, event.currentTarget, {
       publicKey: publicKey,
